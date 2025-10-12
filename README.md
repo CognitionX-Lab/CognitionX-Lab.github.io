@@ -1,1 +1,1 @@
-# CognitionX-Lab.github.io
+# nus-lab-website

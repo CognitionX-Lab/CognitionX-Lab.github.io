@@ -1,0 +1,37 @@
+import { researchOverview, projects } from '@/lib/data'
+import { SectionTitle } from '@/components/SectionTitle'
+import Link from 'next/link'
+import { ProjectCard } from '@/components/ProjectCard'
+
+export default function ResearchPage() {
+  return (
+    <div className="space-y-10">
+      <SectionTitle title="Research" subtitle="" />
+
+      <div className="rounded-xl2 border bg-panel p-6">
+        <div className="text-xl font-semibold">{researchOverview.tagline}</div>
+        <p className="text-neutralMid mt-2">{researchOverview.blurb}</p>
+      </div>
+
+      <div className="grid gap-6 md:grid-cols-3">
+        {researchOverview.pillars.map(p => (
+          <div key={p.title} className="rounded-xl2 border p-6 bg-surface">
+            <div className="text-lg font-semibold">{p.title}</div>
+            <p className="text-neutralMid mt-2">{p.description}</p>
+          </div>
+        ))}
+      </div>
+
+      <section className="space-y-4">
+        <h3 className="text-xl font-semibold">Projects</h3>
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {projects.map(p => (
+            <Link key={p.slug} href={`/projects/${p.slug}`}>
+              <ProjectCard project={p} clickable />
+            </Link>
+          ))}
+        </div>
+      </section>
+    </div>
+  )
+}

@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* LIGHT THEME (default) */
+:root {
+  --bg: 0 0% 100%;
+  --text: 217 22% 15%;
+
+  --primary: 224 100% 52%;
+  --accent: 188 84% 37%;
+
+  --neutral-dark: 217 22% 15%;
+  --neutral-mid: 215 20% 50%;
+  --neutral-light: 220 20% 96%;
+
+  --border: 214 32% 91%;
+
+  /* NEW themed surfaces */
+  --surface: 0 0% 100%;        /* pure card */
+  --panel: 220 20% 96%;        /* subtle section */
+
+  color-scheme: light;
+}
+
+/* DARK THEME */
+[data-theme='dark'] {
+  --bg: 222 41% 7%;
+  --text: 220 16% 92%;
+
+  --primary: 210 100% 63%;
+  --accent: 188 79% 46%;
+
+  --neutral-dark: 220 9% 12%;
+  --neutral-mid: 216 12% 65%;
+  --neutral-light: 220 14% 16%;
+
+  --border: 220 9% 24%;
+
+  /* Surfaces tuned for dark */
+  --surface: 220 14% 16%;      /* card surface */
+  --panel: 220 9% 12%;         /* darker section background */
+
+  color-scheme: dark;
+}
+
+html, body, #__next { height: 100%; }
+
+body {
+  color: hsl(var(--text));
+  background-color: hsl(var(--bg));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container { @apply mx-auto px-4 md:px-6 max-w-content; }
+
+@layer base {
+  * {
+    --tw-border-opacity: 1;
+    border-color: hsl(var(--border) / var(--tw-border-opacity));
+  }
+}
