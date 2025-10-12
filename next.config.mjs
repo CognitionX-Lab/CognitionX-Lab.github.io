@@ -1,9 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',                     
-  images: { unoptimized: true },        
-  basePath: '/CognitionX-Lab.github.io',
-  assetPrefix: '/CognitionX-Lab.github.io/',
+  output: 'export',
+  images: {
+    unoptimized: true, // Required for GitHub Pages
+  },
+  basePath: '',
+  assetPrefix: '',
 };
 
 export default nextConfig;
