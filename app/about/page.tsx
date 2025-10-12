@@ -3,9 +3,10 @@ import { about } from '@/lib/data'
 import Link from 'next/link'
 
 export default function AboutPage() {
-  const paras = Array.isArray(about.paragraphs) && about.paragraphs.length
-    ? about.paragraphs
-    : (about.group || '').split(/\n\s*\n/).map(s => s.trim()).filter(Boolean)
+  const paras = (about.group || '')
+    .split(/\n\s*\n/)
+    .map(s => s.trim())
+    .filter(Boolean)
 
   return (
     <div className="space-y-8">
