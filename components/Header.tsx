@@ -1,17 +1,10 @@
 'use client'
+
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState } from 'react'
 import { clsx } from 'clsx'
 import { ThemeToggle } from '@/components/ThemeToggle'
-
-const nav = [
-  { href: '/', label: 'Home' },
-  { href: '/about', label: 'About' },
-  { href: '/team', label: 'Team' },
-  { href: '/research', label: 'Research' },
-  { href: '/publications', label: 'Publications' },
-  { href: '/contact', label: 'Contact' },
-]
 
 export function Header() {
   const [open, setOpen] = useState(false)
@@ -21,21 +14,39 @@ export function Header() {
       <div className="container mx-auto flex items-center justify-between h-16 px-4 md:px-6">
         <Link
           href="/"
-          className="font-semibold text-lg hover:text-primary transition-colors"
+          className="flex items-center gap-2 font-semibold text-lg hover:text-primary transition-colors"
         >
-          CognitionX Project
+          <Image
+            src="/logo.png"
+            alt="CognitionX Logo"
+            width={32}
+            height={32}
+            className="rounded-md object-contain"
+            priority
+          />
+          <span>CognitionX Project</span>
         </Link>
 
-        <nav className="hidden md:flex gap-6 text-sm">
-          {nav.map((n) => (
-            <Link
-              key={n.href}
-              href={n.href}
-              className="hover:text-primary transition-colors"
-            >
-              {n.label}
-            </Link>
-          ))}
+        <nav className="hidden md:flex items-center gap-6 text-sm">
+          <div className="flex items-center gap-4">
+            <Link href="/about" className="hover:text-primary transition-colors">About</Link>
+            <Link href="/team" className="hover:text-primary transition-colors">Team</Link>
+          </div>
+
+          <div className="w-px h-4 bg-bordercolor/40" /> 
+
+          <div className="flex items-center gap-4">
+            <Link href="/research" className="hover:text-primary transition-colors">Research</Link>
+            <Link href="/publications" className="hover:text-primary transition-colors">Publications</Link>
+          </div>
+
+          <div className="w-px h-4 bg-bordercolor/40" /> 
+
+          <div className="flex items-center gap-4">
+            <Link href="/resources" className="hover:text-primary transition-colors">Resources</Link>
+            <Link href="/positions" className="hover:text-primary transition-colors">Join Us!</Link>
+            <Link href="/contact" className="hover:text-primary transition-colors">Contact</Link>
+          </div>
         </nav>
 
         <div className="flex items-center gap-2">
@@ -56,17 +67,23 @@ export function Header() {
           open ? 'block' : 'hidden'
         )}
       >
-        <div className="flex flex-col gap-3 p-4">
-          {nav.map((n) => (
-            <Link
-              key={n.href}
-              href={n.href}
-              onClick={() => setOpen(false)}
-              className="hover:text-primary transition-colors"
-            >
-              {n.label}
-            </Link>
-          ))}
+        <div className="flex flex-col gap-4 p-4 text-sm">
+          <p className="text-xs uppercase tracking-wide text-neutralMid">About</p>
+          <Link href="/about" onClick={() => setOpen(false)} className="hover:text-primary transition-colors">About</Link>
+          <Link href="/team" onClick={() => setOpen(false)} className="hover:text-primary transition-colors">Team</Link>
+
+          <div className="border-t border-bordercolor/30 my-2" />
+
+          <p className="text-xs uppercase tracking-wide text-neutralMid">Research</p>
+          <Link href="/research" onClick={() => setOpen(false)} className="hover:text-primary transition-colors">Research</Link>
+          <Link href="/publications" onClick={() => setOpen(false)} className="hover:text-primary transition-colors">Publications</Link>
+
+          <div className="border-t border-bordercolor/30 my-2" />
+
+          <p className="text-xs uppercase tracking-wide text-neutralMid">Engage</p>
+          <Link href="/resources" onClick={() => setOpen(false)} className="hover:text-primary transition-colors">Resources</Link>
+          <Link href="/positions" onClick={() => setOpen(false)} className="hover:text-primary transition-colors">Join Us!</Link>
+          <Link href="/contact" onClick={() => setOpen(false)} className="hover:text-primary transition-colors">Contact</Link>
         </div>
       </div>
     </header>

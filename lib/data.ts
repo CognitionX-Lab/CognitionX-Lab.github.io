@@ -1,7 +1,7 @@
 export const site = {
   title: 'CognitionX Project',
   contactEmail: 'jinying.xu@nus.edu.sg',
-  address: 'Department of the Built Environment, College of Design & Engineering, National University of Singapore'
+  address: 'SDE2, Department of the Built Environment (DBE), College of Design and Engineering (CDE), NUS'
 }
 
 /* ===== People ===== */
@@ -682,50 +682,78 @@ export const about = {
 export type Opening = {
   id: string
   title: string
-  level: 'PhD' | 'Postdoc'
   active: boolean
   description: string
+  posted: string
+  deadline: string
   notes?: string[]
 }
+
 export const openings: Opening[] = [
   {
     id: 'open-phd',
     title: 'PhD Positions (Spring 2026)',
-    level: 'PhD',
     active: true,
     description:
-      'Seeking talented, passionate PhD students to advance “Digitally Empowered Project Cognition” across perception, learning, and actuation.'
+      'Seeking talented, passionate PhD students to advance “Digitally Empowered Project Cognition” across perception, learning, and actuation.',
+    posted: 'October 2025',
+    deadline: '#',
   },
   {
     id: 'open-postdoc',
     title: 'Postdoctoral Researchers (Fall 2025 onwards)',
-    level: 'Postdoc',
     active: true,
     description:
-      'Self-motivated postdocs with strong research track in IoT/DT/Robotics/AI and project analytics.'
-  }
+      'Self-motivated postdocs with strong research track in IoT/DT/Robotics/AI and project analytics.',
+    posted: 'September 2025',
+    deadline: 'November 30, 2025',
+  },
 ]
 
-export const requirements = [
-  'Degree: Postdoc (PhD); PhD candidates (Master’s or Bachelor’s with first-class honours or equivalent).',
-  'Fields: Project/Engineering/Construction Management, Civil/Industrial Engineering, Computer Science, or related.',
-  'Strong English communication; TOEFL/IELTS for non-native speakers; GRE optional.',
-  'Evidence of research interest, skills, and experience.',
-  'Programming (e.g., Python/R/SQL/MATLAB) with data tools (ML/NLP/LLM).',
-  'Familiarity with BIM/digital twin or IoT/XR/robotics prototyping.',
-  'Ability to work independently and in a multidisciplinary team; diversity valued.'
-]
+
+export const requirements = {
+  postdoc: [
+    'PhD completed in Built Environment, Engineering, Computer Science, or related field.',
+    'Strong track record in research (publications, projects) related to IoT, digital twins, robotics, AI, or project analytics.',
+    'Experience in independent research and mentoring junior team members.',
+    'Programming and data analysis skills: Python/R/SQL/Julia; familiarity with ML, NLP, or LLM workflows.',
+    'Ability to work collaboratively in a multidisciplinary team and lead research projects.',
+    'Open science mindset: reproducible research, documentation, code sharing.'
+  ],
+  phd: [
+    'Master’s or Bachelor’s with first-class honours (or equivalent) in Built Environment, Engineering, Computer Science, or related.',
+    'Demonstrated research interest and relevant project experience.',
+    'Programming and data skills: Python/R/SQL/Julia; basic ML or data analysis experience.',
+    'Ability to work independently and in a collaborative environment.',
+    'Strong English communication; TOEFL/IELTS required for non-native speakers.',
+    'Commitment to reproducible research and open science.'
+  ],
+  master: [
+    'Bachelor’s in Built Environment, Engineering, Computer Science, or related.',
+    'Interest in research and hands-on project work.',
+    'Basic programming and data skills (Python/R/SQL).',
+    'Ability to follow instructions and contribute to team projects.',
+    'Good communication and documentation skills.'
+  ],
+  undergraduate: [
+    'Currently enrolled in a relevant degree program (Built Environment, Engineering, CS, Data Science).',
+    'Interest in research, coding, data collection, or literature review.',
+    'Basic programming or data skills preferred.',
+    'Ability to commit to scheduled lab hours and tasks.',
+    'Willingness to learn version control (Git/GitHub) and research workflows.'
+  ]
+}
 
 export const howToApply = {
-  email: 'dr.jinying.xu@gmail.com',
+  email: 'jinying.xu@nus.edu.sg',
   items: [
-    'CV with qualifications, research experience, full publication list (highlight representative papers).',
-    'Statement of Purpose (≤ 2 pages): interests, relevant experience, and motivation.',
-    'Academic transcripts and certificates.',
-    'Contact information for 2–3 referees.'
+    'Curriculum Vitae (CV) including qualifications, research experience, and a full publication list (if applicable).',
+    'Statement of Purpose (≤ 2 pages) describing your interests, experience, motivation, and alignment with Cognition X lab mission.',
+    'Academic transcripts and degree certificates.',
+    'Contact information for 2–3 referees familiar with your research or academic work.'
   ],
   note:
-    'For Spring 2026 PhD intake, official deadline is 1 July 2025—please reach out at least ~6 weeks prior. Use email subject: position+affiliation+name.'
+    'For Spring 2026 PhD intake or postdoc applications, please reach out at least 6–8 weeks in advance. Use email subject: [Position]+[Affiliation]+[Full Name]. Include all requested documents in a single email.'
 }
 
 /* ===== News (for Home) ===== */
@@ -741,3 +769,22 @@ export const map = {
   zoom: 16,
   placeLabel: 'NUS CDE • Dept. of the Built Environment',
 }
+
+/* ===== Resources ===== */
+export const resources = [
+  {
+    title: 'Other Materials',
+    items: [
+      {
+        name: 'ROS 2 Beginner Guide',
+        type: 'External Link',
+        url: 'https://docs.ros.org/en/humble/',
+      },
+      {
+        name: 'Sensor Fusion Code Examples',
+        type: 'GitHub Repository',
+        url: 'https://github.com/example/sensor-fusion-labs',
+      },
+    ],
+  },
+]
