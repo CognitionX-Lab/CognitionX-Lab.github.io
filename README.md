@@ -1,1 +1,1 @@
-# nus-lab-website
+# CognitionX Project
