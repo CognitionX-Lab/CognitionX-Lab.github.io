@@ -39,7 +39,7 @@ export default function PublicationsPage() {
   return (
     <div className="space-y-8">
       <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-        <SectionTitle title="Publications" subtitle="" />
+        <SectionTitle title="Publications" subtitle="* See full and updated list on PI's Google Scholar." />
         <Link
           href={piScholarUrl}
           target="_blank"

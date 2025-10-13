@@ -58,6 +58,27 @@ export default function JoinUsPage() {
       as the NUS ASEAN Research Scholarship, Commonwealth Scholarship, NUS SINGA Scholarship, etc.
     </p>
 
+    <p>
+      <strong>More information:</strong> Visit the{' '}
+      <a
+        href="https://nusgs.nus.edu.sg"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-primary underline"
+      >
+        NUS Graduate School (NUSGS)
+      </a>{' '}
+      and{' '}
+      <a
+        href="https://cde.nus.edu.sg/graduate/scholarship-opportunities/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-primary underline"
+      >
+        Scholarship Opportunities - College of Design and Engineering
+      </a>.
+    </p>
+
     <ul className="list-disc ml-6 space-y-1">
       <li>
         <a
@@ -102,27 +123,6 @@ export default function JoinUsPage() {
     </ul>
 
     <p>
-      <strong>More information:</strong> Visit the{' '}
-      <a
-        href="https://nusgs.nus.edu.sg"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-primary underline"
-      >
-        NUS Graduate School (NUSGS)
-      </a>{' '}
-      and{' '}
-      <a
-        href="https://cde.nus.edu.sg/graduate/scholarship-opportunities/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-primary underline"
-      >
-        Scholarship Opportunities - College of Design and Engineering
-      </a>.
-    </p>
-
-    <p>
       <strong>Do your homework:</strong> Read the lab manual first on the Lab “Resources” page (
         <a
         href="/resources"
@@ -144,7 +144,7 @@ export default function JoinUsPage() {
     </p>
 
     <p>
-      <strong>Other helpful information:</strong> Living cost in Singapore:    <a
+      <strong>Other helpful information:</strong>  <a
         href="https://nusgs.nus.edu.sg/cost-of-living/"
         target="_blank"
         rel="noopener noreferrer"

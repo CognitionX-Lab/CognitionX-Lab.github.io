@@ -45,7 +45,7 @@ export const people: Person[] = [
   },
   {
     id: 'postdoc-1',
-    name: 'Student Name',
+    name: 'Group Member',
     role: 'Role',
     group: 'Postdoc',
     avatar: '/people/unknown.jpg',
@@ -56,7 +56,7 @@ export const people: Person[] = [
   },
   {
     id: 'phd-1',
-    name: 'Student Name',
+    name: 'Group Member',
     role: 'Role',
     group: 'PhD',
     avatar: '/people/unknown.jpg',
@@ -72,7 +72,7 @@ export const people: Person[] = [
   },
   {
     id: 'ms-1',
-    name: 'Student Name',
+    name: 'Group Member',
     role: 'Role',
     group: 'Masters',
     avatar: '/people/unknown.jpg',
@@ -86,7 +86,7 @@ export const people: Person[] = [
 
 // --- PI Google Scholar -------------------------------------------------------
 export const piScholarUrl =
-  'https://scholar.google.co.uk/citations?user=yzpBR0kAAAAJ&hl=en'
+  'https://scholar.google.com/citations?user=McTBzwoAAAAJ&hl=en'
 
 // --- Publications ------------------------------------------------------------
 export type Publication = {
@@ -748,19 +748,20 @@ export const howToApply = {
   email: 'jinying.xu@nus.edu.sg',
   items: [
     'Curriculum Vitae (CV) including qualifications, research experience, and a full publication list (if applicable).',
+    'An initial research proposal (as outlined in the lab manual in \'Resources\' section)',
     'Statement of Purpose (≤ 2 pages) describing your interests, experience, motivation, and alignment with Cognition X lab mission.',
     'Academic transcripts and degree certificates.',
     'Contact information for 2–3 referees familiar with your research or academic work.'
   ],
   note:
-    'For Spring 2026 PhD intake or postdoc applications, please reach out at least 6–8 weeks in advance. Use email subject: [Position]+[Affiliation]+[Full Name]. Include all requested documents in a single email.'
+    'Please reach out at least 6–8 weeks in advance. Use email subject: [Position]+[Affiliation]+[Full Name].'
 }
 
 /* ===== News (for Home) ===== */
 export type NewsItem = { id: string, date: string, title: string, href?: string }
 export const news: NewsItem[] = [
-  { id: 'n1', date: 'Sep 2025', title: '🎉Dr. Jinying Xu joined NUS Department of the Built Enviornment as Assistant Professor' },
-  { id: 'n2', date: 'Oct 2025', title: 'CognitionX Research Group\'s website is launched' }
+  { id: 'n1', date: 'Sep 2025', title: '🎉 Dr. Jinying Xu joined NUS Department of the Built Enviornment as Assistant Professor' },
+  { id: 'n2', date: 'Oct 2025', title: '🚀 CognitionX Research Group\'s website is live.' }
 ]
 
 export const map = {
