@@ -1,7 +1,7 @@
 export const site = {
   title: 'CognitionX Project',
   contactEmail: 'jinying.xu@nus.edu.sg',
-  address: 'SDE2, Department of the Built Environment (DBE), College of Design and Engineering (CDE), NUS'
+  address: 'SDE2, 2 Architecture Dr., Singapore 117565'
 }
 
 /* ===== People ===== */
@@ -29,13 +29,13 @@ export const people: Person[] = [
   {
     id: 'pi-1',
     name: 'Dr. Jinying Xu',
-    role: 'Assistant Professor, NUS Department of the Built Environment',
+    role: 'Assistant Professor, Department of the Built Environment (DBE), College of Design and Engineering (CDE), National University of Singapore (NUS)',
     group: 'PI',
     avatar: '/people/jinying-xu.jpg',
     bio: 'Marie Skłodowska–Curie Fellow (2022–2025) at University of Cambridge. PhD (HKU, 2021).',
     interests: ['Smart Construction', 'Sensing Technologies', 'Digital Transformation', 'Data Science', 'Sustainable Infrastructure', 'Organization Technology Transformation', 'Context-awareness', 'Building Information Modelling', 'Cognitive Facility Management', 'Construction Project Management', 'Construction Waste Management'],
     links: {
-      scholar: 'https://scholar.google.co.uk/citations?user=yzpBR0kAAAAJ&hl=en',
+      scholar: 'https://scholar.google.com/citations?user=McTBzwoAAAAJ&hl=en',
       linkedin: 'https://www.linkedin.com/in/jinying-xu-5a2394208',
       website: 'https://eagletsuimars.github.io/',
       email: 'jinying.xu@nus.edu.sg',
