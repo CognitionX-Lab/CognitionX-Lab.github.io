@@ -142,6 +142,16 @@ export default function JoinUsPage() {
       transcripts, an initial research proposal (as outlined in the lab manual), and optionally your publication
       links or GitHub pages.
     </p>
+
+    <p>
+      <strong>Other helpful information:</strong> Living cost in Singapore:    <a
+        href="https://nusgs.nus.edu.sg/cost-of-living/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-primary underline"
+      >Cost of Living : NUS Graduate School (NUSGS)
+      </a>
+    </p>
   </div>
 </section>
 
@@ -241,7 +251,7 @@ function OpeningCard({
               className="mt-3 inline-block text-primary underline text-sm"
               href={`mailto:${howToApply.email}`}
             >
-              Apply via Email
+              Express your interest
             </a>
           </section>
         </div>
