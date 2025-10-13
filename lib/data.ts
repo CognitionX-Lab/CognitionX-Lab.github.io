@@ -45,41 +45,41 @@ export const people: Person[] = [
   },
   {
     id: 'postdoc-1',
-    name: 'Jane Doe',
-    role: 'Postdoctoral Researcher',
+    name: 'Student Name',
+    role: 'Role',
     group: 'Postdoc',
     avatar: '/people/unknown.jpg',
-    bio: 'Digital twins and construction robotics.',
-    interests: ['Digital Twins', 'Robotics'],
+    bio: 'Bio.',
+    interests: ['interest 1', 'interest 2'],
     links: { scholar: '#', linkedin: '#' },
-    intake: 'Summer 2025',
+    intake: 'Intake',
   },
   {
     id: 'phd-1',
-    name: 'Jane Doe',
-    role: 'PhD (Spring 2026)',
+    name: 'Student Name',
+    role: 'Role',
     group: 'PhD',
     avatar: '/people/unknown.jpg',
-    bio: 'Sensor fusion, robotics, and AI/ML for resilient cities and autonomy.',
-    interests: ['Sensor Fusion', 'Robotics', 'AI/ML'],
+    bio: 'Bio.',
+    interests: ['interest 1', 'interest 2'],
     links: {
       github: '#',
       linkedin: '#',
       website: '#',
       email: 'aa@example.com',
     },
-    intake: 'Spring 2026',
+    intake: 'Intake',
   },
   {
     id: 'ms-1',
-    name: 'Alex Tan',
-    role: 'Masters',
+    name: 'Student Name',
+    role: 'Role',
     group: 'Masters',
     avatar: '/people/unknown.jpg',
-    bio: 'Computer vision for material flow.',
-    interests: ['CV', 'Sustainability'],
+    bio: 'Bio.',
+    interests: ['interest 1', 'interest 2'],
     links: { github: '#', linkedin: '#' },
-    intake: 'Fall 2025',
+    intake: 'Intake',
   }
 ]
 
@@ -678,7 +678,7 @@ export const about = {
     'NUS is a global top-10 university (QS 2025) with leading rankings in Architecture & Built Environment and Construction Management research.',
 }
 
-/* ===== Openings (moved under Contact) ===== */
+/* ===== Openings (join us) ===== */
 export type Opening = {
   id: string
   title: string
@@ -692,22 +692,22 @@ export type Opening = {
 export const openings: Opening[] = [
   {
     id: 'open-phd',
-    title: 'PhD Positions (Spring 2026)',
+    title: 'PhD Positions (Fall 2026)',
     active: true,
     description:
-      'Seeking talented, passionate PhD students to advance “Digitally Empowered Project Cognition” across perception, learning, and actuation.',
+      'Candidates who are good at Building/Infrastructure Informatics,  Data Science, Knowledge Graph, or Ontology Mapping are strongly encouraged to apply',
     posted: 'October 2025',
     deadline: '#',
   },
-  {
-    id: 'open-postdoc',
-    title: 'Postdoctoral Researchers (Fall 2025 onwards)',
-    active: true,
-    description:
-      'Self-motivated postdocs with strong research track in IoT/DT/Robotics/AI and project analytics.',
-    posted: 'September 2025',
-    deadline: 'November 30, 2025',
-  },
+  // {
+  //   id: 'open-postdoc',
+  //   title: 'Postdoctoral Researchers (Fall 2025 onwards)',
+  //   active: true,
+  //   description:
+  //     'Self-motivated postdocs with strong research track in IoT/DT/Robotics/AI and project analytics.',
+  //   posted: 'September 2025',
+  //   deadline: 'November 30, 2025',
+  // },
 ]
 
 

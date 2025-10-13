@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { openings, requirements, howToApply } from '@/lib/data'
 import { SectionTitle } from '@/components/SectionTitle'
 
-export default function OpeningsPage() {
+export default function JoinUsPage() {
   const active = openings.filter(o => o.active)
 
   return (
@@ -35,25 +35,116 @@ export default function OpeningsPage() {
       </section>
 
       <section className="space-y-4">
-        <SectionTitle title="General Application Guidelines" subtitle="" />
-        <ul className="list-disc ml-6 space-y-2 text-sm text-neutralMid">
-          <li>
-            Review our research scope and ensure your interests align with ongoing projects.
-          </li>
-          <li>
-            Tailor your application — generic submissions will not be entertained.
-          </li>
-          <li>
-            Include your CV, a short motivation statement, and optionally GitHub or publication links.
-          </li>
-          <li>
-            Demonstrate computational and programming skills.
-          </li>
-          <li>
-            For PhD or RA roles, review our publications and explain how your expertise contributes to lab research.
-          </li>
-        </ul>
-      </section>
+  <SectionTitle title="General Application Guidelines" subtitle="" />
+  <div className="text-sm text-neutralMid leading-relaxed space-y-3">
+    <p>
+      <strong>Application timeline and requirements:</strong> NUS welcomes outstanding students with excellent
+      academic achievements from all over the world. Make sure you meet requirements as listed at{' '}
+      <a
+        href="https://cde.nus.edu.sg/graduate/graduate-programmes-by-research/how-to-apply/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-primary underline"
+      >
+        Graduate Programmes by Research - How to Apply - College of Design and Engineering
+      </a>.
+    </p>
+
+    <p>
+      <strong>Scholarships:</strong> We offer various scholarships (as listed below), but they can be very
+      competitive. Study the requirements and restrictions carefully. You are more competitive if you graduated
+      from a top university with good academic records (First-class honours, high GPA, excellent English test
+      results, publications). Less well-represented nationalities could apply for non-restricted scholarships such
+      as the NUS ASEAN Research Scholarship, Commonwealth Scholarship, NUS SINGA Scholarship, etc.
+    </p>
+
+    <ul className="list-disc ml-6 space-y-1">
+      <li>
+        <a
+          href="https://nusgs.nus.edu.sg/scholarships/data-science-scholarship"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary underline"
+        >
+          NUS Data Science Scholarship
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://nusgs.nus.edu.sg/scholarships/nus-asean-research-scholarship"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary underline"
+        >
+          NUS ASEAN Research Scholarship
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://nusgs.nus.edu.sg/scholarships/nus-industry-relevant-phd-scholarship-nus-irp"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary underline"
+        >
+          NUS Industry-Relevant PhD Scholarship (NUS-IRP)
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://nusgs.nus.edu.sg/scholarships/nus-singa-scholarship"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary underline"
+        >
+          NUS SINGA Scholarship
+        </a>
+      </li>
+    </ul>
+
+    <p>
+      <strong>More information:</strong> Visit the{' '}
+      <a
+        href="https://nusgs.nus.edu.sg"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-primary underline"
+      >
+        NUS Graduate School (NUSGS)
+      </a>{' '}
+      and{' '}
+      <a
+        href="https://cde.nus.edu.sg/graduate/scholarship-opportunities/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-primary underline"
+      >
+        Scholarship Opportunities - College of Design and Engineering
+      </a>.
+    </p>
+
+    <p>
+      <strong>Do your homework:</strong> Read the lab manual first on the Lab “Resources” page (
+        <a
+        href="/resources"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-primary underline"
+      >
+        Link
+      </a>). Understand the lab, review our research scope, and ensure your interests align with our focus.
+      Tailor your application carefully.
+    </p>
+
+    <p>
+      <strong>Before you apply:</strong> Reach out to <strong>Dr. Jinying Xu</strong> before submitting your
+      application. Explain how your expertise and skills contribute to lab research, which funding you would pursue
+      (if applying for a scholarship, specify which one you are eligible for and interested in). Include your CV,
+      transcripts, an initial research proposal (as outlined in the lab manual), and optionally your publication
+      links or GitHub pages.
+    </p>
+  </div>
+</section>
+
 
       <section className="space-y-6">
         <SectionTitle title="Current Openings" subtitle="" />
