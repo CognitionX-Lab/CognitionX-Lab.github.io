@@ -46,7 +46,7 @@ export default function PublicationsPage() {
           rel="noreferrer"
           className="inline-flex items-center justify-center rounded-xl2 border px-4 py-2 hover:bg-panel text-sm"
         >
-          View PI on Google Scholar
+          View PI's' Google Scholar
         </Link>
       </div>
 
