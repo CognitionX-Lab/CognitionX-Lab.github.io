@@ -624,6 +624,7 @@ export type Project = {
   tags: string[]
   abstract: string
   members: string[]
+  grant?: string
   repoUrl?: string
   demoUrl?: string
   paperUrl?: string

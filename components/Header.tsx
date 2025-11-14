@@ -17,10 +17,10 @@ export function Header() {
           className="flex items-center gap-2 font-semibold text-lg hover:text-primary transition-colors"
         >
           <Image
-            src="/logo.png"
-            alt="CognitionX Logo"
-            width={32}
-            height={32}
+            src="/Lab_Logo.png"
+            alt="Cognition X Logo"
+            width={88}
+            height={40}
             className="rounded-md object-contain"
             priority
           />
@@ -83,7 +83,7 @@ export function Header() {
 
           <p className="text-xs uppercase tracking-wide text-neutralMid">Engage</p>
           <Link href="/resources" onClick={() => setOpen(false)} className="hover:text-primary transition-colors">Resources</Link>
-          <Link href="/positions" onClick={() => setOpen(false)} className="hover:text-primary transition-colors">Join Us!</Link>
+          <Link href="/join-us" onClick={() => setOpen(false)} className="hover:text-primary transition-colors">Join Us!</Link>
           <Link href="/contact" onClick={() => setOpen(false)} className="hover:text-primary transition-colors">Contact</Link>
         </div>
       </div>
