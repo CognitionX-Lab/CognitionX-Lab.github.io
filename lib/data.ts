@@ -1,5 +1,5 @@
 export const site = {
-  title: 'CognitionX Project',
+  title: 'Cognition X Project',
   contactEmail: 'jinying.xu@nus.edu.sg',
   address: 'SDE2, 2 Architecture Dr., Singapore 117565'
 }
@@ -33,7 +33,7 @@ export const people: Person[] = [
     group: 'PI',
     avatar: '/people/jinying-xu.jpg',
     bio: 'Marie Skłodowska–Curie Fellow (2022–2025) at University of Cambridge. PhD (HKU, 2021).',
-    interests: ['Smart Construction', 'Sensing Technologies', 'Digital Transformation', 'Data Science', 'Sustainable Infrastructure', 'Organization Technology Transformation', 'Context-awareness', 'Building Information Modelling', 'Cognitive Facility Management', 'Construction Project Management', 'Construction Waste Management'],
+    interests: ['Smart Construction', 'Digital Technologies', 'Digital Transformation', 'Data Science', 'Sustainable Infrastructure', 'Systems Thinking', 'Organization Technology Transformation', 'Context-awareness', 'Digital Twins', 'Cognitive Facility Management', 'Construction Project Management', 'Lean Construction'],
     links: {
       scholar: 'https://scholar.google.com/citations?user=McTBzwoAAAAJ&hl=en',
       linkedin: 'https://www.linkedin.com/in/jinying-xu-5a2394208',
@@ -631,8 +631,8 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: 'digitally-empowered-project-cognition', // ✅ real slug (no brackets)
-    title: 'Digitally Empowered Project Cognition',
+    slug: 'Digitally Empowered Project Cognition for Sustainability', // ✅ real slug (no brackets)
+    title: 'Digitally Empowered Project Cognition for Sustainability',
     summary:
       'IoT perception + cognitive learning + AI/robotic actuation to optimize efficiency, safety, and sustainability.',
     coverImage: 'https://placehold.co/800x450/png?text=Project+Cognition',
@@ -640,6 +640,7 @@ export const projects: Project[] = [
     abstract:
       'We systematically integrate IoT-based perception, cognitive learning models, and actuation mechanisms to mimic human cognition in project decision-making.',
     members: ['Dr. Jinying Xu', 'Team'],
+    grant: 'NUS Start-Up Grant (2025-2029), S$500,000',
     repoUrl: 'https://github.com/example',
     demoUrl: 'https://demo.example.com',
     paperUrl: 'https://scholar.google.com/example'
@@ -648,7 +649,7 @@ export const projects: Project[] = [
 
 /* ===== Research Overview (from flyer) ===== */
 export const researchOverview = {
-  tagline: 'Digitally Empowered Project Cognition',
+  tagline: 'Digitally Empowered Project Cognition for Sustainability',
   blurb:
     'An interdisciplinary initiative to enhance project decision-making by mimicking human cognition—optimizing efficiency, safety, and sustainability via IoT-based perception, cognitive learning, and AI/robotic actuation.',
   pillars: [

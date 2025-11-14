@@ -4,7 +4,7 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'CognitionX Project',
+  title: 'Cognition X Project',
   description: 'Research lab website',
 }
 

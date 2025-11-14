@@ -48,11 +48,11 @@ export function Hero() {
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               Cognitive Technologies
             </span>{' '}
-            for Innovative Construction
+            for Sustainable Built Environments
           </h1>
 
           <p className="mt-5 text-neutralMid text-lg md:text-xl">
-            Empowering Smart Infrastructure Through Data-Driven Innovation
+            Empowering Intelligence and Sustainability Through Data-Driven Innovation
           </p>
 
           <div className="mt-7 flex flex-wrap justify-center gap-3">

@@ -44,6 +44,7 @@ export function Header() {
 
           <div className="flex items-center gap-4">
             <Link href="/resources" className="hover:text-primary transition-colors">Resources</Link>
+          <div className="w-px h-4 bg-bordercolor/40" /> 
             <Link href="/join-us" className="hover:text-primary transition-colors">Join Us!</Link>
             <Link href="/contact" className="hover:text-primary transition-colors">Contact</Link>
           </div>
