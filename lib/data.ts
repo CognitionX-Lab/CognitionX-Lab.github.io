@@ -1,5 +1,5 @@
 export const site = {
-  title: 'Cognition X Project',
+  title: 'Cognition X Lab',
   contactEmail: 'jinying.xu@nus.edu.sg',
   address: 'SDE2, 2 Architecture Dr., Singapore 117565'
 }
@@ -776,7 +776,7 @@ export type About = {
 
 export const about: About = {
   group:
-    'Cognition X Lab aims to develop a cognitive layer in construction project management by integrating data streams from Building Information Modeling (BIM), Internet of Things (IoT), sensors, supply chains, and workflows.\n\n Our mission is to create an intelligent "project brain" using advanced artificial intelligence (AI) to support project teams in optimizing outcomes through material minimization, enhancing process intelligence, and enabling automated system actuation. Focused on sustainability and resilience, we emphasize lifecycle carbon reduction and adaptive, context-aware infrastructures. By bridging digital workflows with real-world data, CognitionX transforms construction sites into smart ecosystems that deliver efficient, human-centered built environments.\n\n Join us as we innovate solutions for the construction challenges of tomorrow, blending cutting-edge technology with sustainability for a transformative impact on infrastructure development.',
+    'Cognition X Lab aims to develop a cognitive layer in construction project management by integrating data streams from Building Information Modeling (BIM), Internet of Things (IoT), sensors, supply chains, and workflows.\n\n Our mission is to create an intelligent "project brain" using advanced artificial intelligence (AI) to support project teams in optimizing outcomes through material minimization, enhancing process intelligence, and enabling automated system actuation. Focused on sustainability and resilience, we emphasize lifecycle carbon reduction and adaptive, context-aware infrastructures. By bridging digital workflows with real-world data, Cognition X transforms construction sites into smart ecosystems that deliver efficient, human-centered built environments.\n\n Join us as we innovate solutions for the construction challenges of tomorrow, blending cutting-edge technology with sustainability for a transformative impact on infrastructure development.',
   nusNote:
     'NUS is a global top-10 university (QS 2025) with leading rankings in Architecture & Built Environment and Construction Management research.',
   //Add image path (e.g., '/Lab_Logo.png' or '/images/about-figure.png')
