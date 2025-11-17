@@ -755,7 +755,7 @@ export const researchOverview = {
     {
       title: 'Learning',
       description:
-        'Use cognitive computing to understand project context and adapt processes/structures to improve key performance indicators.'
+        'Use cognitive computing and AI to understand project context and adapt processes/structures to improve key performance indicators.'
     },
     {
       title: 'Actuation',
@@ -772,6 +772,11 @@ export type About = {
   image?: string
   imageAlt?: string
   imageCaption?: string
+  secondaryImage?: string
+  secondaryImageAlt?: string
+  secondaryImageCaption?: string
+  nusLinkLabel?: string
+  nusLinkHref?: string
 }
 
 export const about: About = {
@@ -783,6 +788,10 @@ export const about: About = {
   image: '/Lab_Logo.png',
   imageAlt: 'Cognition X Lab',
   // imageCaption: 'Optional caption for the image',
+  secondaryImage: '/logo.png',
+  secondaryImageAlt: 'National University of Singapore',
+  nusLinkLabel: 'Visit NUS',
+  nusLinkHref: 'https://nus.edu.sg',
 }
 
 /* ===== Openings (join us) ===== */
