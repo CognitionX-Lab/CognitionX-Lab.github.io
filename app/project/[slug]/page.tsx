@@ -86,13 +86,15 @@ export default function ProjectDetail({ params }: { params: { slug: string } }) 
         </div>
       )}
 
-      <div className="overflow-hidden rounded-2xl shadow-md border border-bordercolor/60">
-        <img
-          src={proj.coverImage}
-          alt={proj.title}
-          className="w-full aspect-video object-cover hover:scale-[1.02] transition-transform duration-500"
-        />
-      </div>
+      {proj.coverImage && (
+        <div className="overflow-hidden rounded-2xl shadow-md border border-bordercolor/60">
+          <img
+            src={proj.coverImage}
+            alt={proj.title}
+            className="w-full aspect-video object-cover hover:scale-[1.02] transition-transform duration-500"
+          />
+        </div>
+      )}
 
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-6">
         <div className="md:col-span-4 rounded-xl2 border bg-panel p-6 shadow-sm">
