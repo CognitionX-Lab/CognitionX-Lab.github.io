@@ -19,7 +19,7 @@ export default function AboutPage() {
           <figure className="overflow-hidden rounded-xl2 border border-bordercolor/60 bg-surface shadow-md">
             <Image
               src={about.image}
-              alt={about.imageAlt || "About CognitionX Lab"}
+              alt={about.imageAlt || "About Cognition X Lab"}
               width={1200}
               height={600}
               className="w-full h-auto object-contain"
