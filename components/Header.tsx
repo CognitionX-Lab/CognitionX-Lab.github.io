@@ -18,13 +18,13 @@ export function Header() {
         >
           <Image
             src="/Lab_Logo.png"
-            alt="Cognition X Logo"
+            alt="Cognition X Lab Logo"
             width={88}
             height={40}
             className="rounded-md object-contain"
             priority
           />
-          <span>CognitionX Project</span>
+          <span>Cognition X Lab</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-6 text-sm">
