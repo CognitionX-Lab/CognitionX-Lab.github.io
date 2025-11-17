@@ -110,6 +110,13 @@ export default function ProjectDetail({ params }: { params: { slug: string } }) 
             ))}
           </ul>
         </div>
+
+        {proj.grant && (
+          <div className="md:col-span-5 rounded-xl2 border bg-panel/70 p-6 shadow-sm">
+            <h3 className="text-xl font-semibold mb-3 text-primary">Grant & Funding</h3>
+            <p className="text-neutralMid leading-relaxed">{proj.grant}</p>
+          </div>
+        )}
       </div>
 
       <div className="pt-4 text-center">
