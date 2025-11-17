@@ -713,7 +713,7 @@ export type Project = {
   slug: string
   title: string
   summary: string
-  coverImage: string
+  coverImage?: string
   tags: string[]
   abstract: string
   members: string[]
