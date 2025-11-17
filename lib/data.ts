@@ -787,7 +787,7 @@ export const about: About = {
   //Add image path (e.g., '/Lab_Logo.png' or '/images/about-figure.png')
   image: '/Lab_Logo.png',
   imageAlt: 'Cognition X Lab',
-  // imageCaption: 'Optional caption for the image',
+  imageCaption: 'Cognition X Lab Logo',
   secondaryImage: '/slogan.png',
   secondaryImageAlt: 'Cognition X Lab Research Scope',
   nusLinkLabel: 'Visit NUS',
