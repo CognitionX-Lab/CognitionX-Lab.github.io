@@ -47,8 +47,8 @@ export default function AboutPage() {
             <Image
               src={about.secondaryImage}
               alt={about.secondaryImageAlt || 'About Cognition X Lab'}
-              width={1200}
-              height={600}
+              width={800}
+              height={400}
               className="w-full h-auto object-contain"
             />
             {about.secondaryImageCaption && (
