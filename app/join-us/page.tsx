@@ -13,12 +13,12 @@ export default function JoinUsPage() {
         <SectionTitle title="Why Join Us?" subtitle="" />
         <div className="text-neutralMid text-sm leading-relaxed space-y-3">
           <p>
-            Welcome to the <strong>CognitionX Project</strong> at the National University of Singapore (NUS)!
+            Welcome to the <strong>Cognition X Lab</strong> at the National University of Singapore (NUS)!
             Our cross-disciplinary research lab focuses on data- and digitalisation-driven project cognition
             and system resilience for infrastructure and buildings in the built environment.
           </p>
           <p>
-            By joining our lab, you will gain hands-on experience in data science, digital technologies,
+            By joining our lab, you will gain hands-on experience in data science, AI, digital technologies,
             systems engineering, and sustainability for the built environment. You will learn coding, data
             analysis, scientific writing, and presenting your work, while collaborating with a supportive team.
           </p>
