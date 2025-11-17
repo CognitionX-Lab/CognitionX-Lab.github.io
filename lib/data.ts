@@ -788,8 +788,8 @@ export const about: About = {
   image: '/Lab_Logo.png',
   imageAlt: 'Cognition X Lab',
   // imageCaption: 'Optional caption for the image',
-  secondaryImage: '/logo.png',
-  secondaryImageAlt: 'National University of Singapore',
+  secondaryImage: '/slogan.png',
+  secondaryImageAlt: 'Cognition X Lab Research Scope',
   nusLinkLabel: 'Visit NUS',
   nusLinkHref: 'https://nus.edu.sg',
 }
