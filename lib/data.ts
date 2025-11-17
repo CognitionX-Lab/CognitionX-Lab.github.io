@@ -108,6 +108,15 @@ export type Publication = {
 export const publications: Publication[] = [
   // -------------------- JOURNAL PAPERS --------------------
   {
+    id: 'j-31',
+    kind: 'journal',
+    year: 2025,
+    title: 'Semantics-Based Connectivity Graph for Indoor Pathfinding Powered by Ifc-Graph',
+    authors: ['Junxiang Zhu', 'Mun On Wong', 'Nicholas Nisbet', 'Jinying Xu', 'Tom Kelly', 'Sisi Zlatanova', 'Ioannis Brilakis'],
+    venue: 'Automation in Construction, 171, 106019',
+    url: 'https://www.sciencedirect.com/science/article/pii/S0926580525000597',
+  },
+  {
     id: 'j-30',
     kind: 'journal',
     year: 2024,
@@ -409,6 +418,36 @@ export const publications: Publication[] = [
 
   // -------------------- CONFERENCE PAPERS --------------------
   {
+    id: 'c-17',
+    kind: 'conference',
+    year: 2025,
+    title:
+      'How good are the best practices in carbon reduction? UK highway sector case studies',
+    authors: ['Jinying XU', 'Kristen MacAskill'],
+    venue: 'ISARC. Proceedings of the International Symposium on Automation and Robotics in Construction',
+    url: '',
+  },
+  {
+    id: 'c-16',
+    kind: 'conference',
+    year: 2025,
+    title:
+      'Extending IFC Data Structure for Carbon Digital Twin: An IFC Road Example',
+    authors: ['Jinying XU', 'Junxiang Zhu', 'Mengtian Yin', 'Kristen MacAskill', 'Ioannis Brilakis'],
+    venue: 'EC3 Conference 2025, Porto, Portugal',
+    url: 'https://doi.org/10.17863/CAM.118098',
+  },
+  {
+    id: 'c-15',
+    kind: 'conference',
+    year: 2024,
+    title:
+      'Information requirements over the asset lifecycle to include carbon into digital twin: A UK highway examplee',
+    authors: ['Jinying XU', 'Kristen MacAskill', 'Mengtian Yin','Junxiang Zhu',  'Ioannis Brilakis'],
+    venue: 'CIB W78 2024 Conference, Marrakesh, Morocco',
+    url: 'https://itc.scix.net/pdfs/w78-2024-paper_146.pdf',
+  },
+  {
     id: 'c-14',
     kind: 'conference',
     year: 2023,
@@ -559,6 +598,60 @@ export const publications: Publication[] = [
 
   // -------------------- BOOK CHAPTERS --------------------
   {
+    id: 'b-10',
+    kind: 'book',
+    year: 2025,
+    title:
+      'Blockchain in construction supply chain management',
+    authors: ['Liupengfei Wu', 'Jinying Xu', 'Weisheng Lu'],
+    venue:
+      'Blockchain, Smart Contracts and Distributed Ledger Technologies in the Built Environment: Key concepts, technologies, and applications',
+    url: 'https://digital-library.theiet.org/doi/abs/10.1049/PBBE007E_ch9',
+    },
+  {
+    id: 'b-9',
+    kind: 'book',
+    year: 2025,
+    title:
+      'Digital Technologies for Climate-Adaptive Smart Urban Transportation Systems',
+    authors: ['Jinying XU*', 'Kristen MacAskill','Asaf Tzachor', 'Catherine Richards'],
+    venue:
+      'Routledge Handbook of Smart Built Environment',
+    url: 'https://www.taylorfrancis.com/chapters/edit/10.1201/9781003383840-19/digital-technologies-climate-adaptive-smart-urban-transportation-systems-jinying-xu-kristen-macaskill-asaf-tzachor-catherine-richards',
+  },
+  {
+    id: 'b-8',
+    kind: 'book',
+    year: 2025,
+    title:
+      'Blockchain for Smart Built Environment: Current status, Challenges, and Prospects',
+    authors: ['Liupengfei Wu', 'Weisheng Lu', 'Jinying Xu', 'Jinfeng Lou', 'Liang Yuan'],
+    venue:
+      'Routledge Handbook of Smart Built Environment',
+    url: 'https://www.taylorfrancis.com/chapters/edit/10.1201/9781003383840-20/blockchain-smart-built-environment-liupengfei-wu-weisheng-lu-jinying-xu-jinfeng-lou-liang-yuan',
+  },
+  {
+    id: 'b-7',
+    kind: 'book',
+    year: 2025,
+    title:
+      'Generative Design for Excellence (DfX) for a Smart Built Environment: From Rule-based Imitation to Data-Driven Exploration',
+    authors: ['Ziyu Peng', 'Yi Zhang', 'Weisheng Lu', 'Junjie Chen', 'Liupengfei Wu', 'Jinying Xu'],
+    venue:
+      'Routledge Handbook of Smart Built Environment',
+    url: 'https://www.taylorfrancis.com/chapters/edit/10.1201/9781003383840-4/generative-design-excellence-dfx-smart-built-environment-ziyu-peng-yi-zhang-weisheng-lu-junjie-chen-liupengfei-wu-jinying-xu',
+  },
+  {
+    id: 'b-6',
+    kind: 'book',
+    year: 2023,
+    title:
+      'Big data analytics and project organizing',
+    authors: ['Weisheng LU', 'Jinying XU*'],
+    venue:
+      'Research Handbook on Complex Project Organizing (Edward Elgar Publishing)',
+  },
+  {
     id: 'b-5',
     kind: 'book',
     year: 2022,
@@ -566,7 +659,7 @@ export const publications: Publication[] = [
       'BIM, Smart Construction Objects (SCOs) and Pervasive Technologies Integration',
     authors: ['Jinying XU*', 'Weisheng LU'],
     venue:
-      'Research Companion to Building Information Modeling (Edward Elgar) — Peer-reviewed (Coming Soon)',
+      'Research Companion to Building Information Modeling (Edward Elgar Publishing)',
   },
   {
     id: 'b-4',
@@ -673,11 +766,23 @@ export const researchOverview = {
 }
 
 /* ===== About (group + NUS) ===== */
-export const about = {
+export type About = {
+  group: string
+  nusNote: string
+  image?: string
+  imageAlt?: string
+  imageCaption?: string
+}
+
+export const about: About = {
   group:
-    'CognitionX is pioneering the development of a cognitive layer in construction project management by integrating data streams from Building Information Modeling (BIM), Internet of Things (IoT), sensors, supply chains, and workflows.\n\n Our mission is to create an intelligent “project brain” that supports project teams in optimizing outcomes through material minimization, enhancing process intelligence, and enabling automated system actuation. Focused on sustainability and resilience, we emphasize lifecycle carbon reduction and adaptive, context-aware infrastructures. By bridging digital workflows with real-world data, CognitionX transforms construction sites into smart ecosystems that deliver efficient, human-centered built environments.\n\n Join us as we innovate solutions for the construction challenges of tomorrow, blending cutting-edge technology with sustainability for a transformative impact on infrastructure development.',
+    'CognitionX is pioneering the development of a cognitive layer in construction project management by integrating data streams from Building Information Modeling (BIM), Internet of Things (IoT), sensors, supply chains, and workflows.\n\n Our mission is to create an intelligent "project brain" that supports project teams in optimizing outcomes through material minimization, enhancing process intelligence, and enabling automated system actuation. Focused on sustainability and resilience, we emphasize lifecycle carbon reduction and adaptive, context-aware infrastructures. By bridging digital workflows with real-world data, CognitionX transforms construction sites into smart ecosystems that deliver efficient, human-centered built environments.\n\n Join us as we innovate solutions for the construction challenges of tomorrow, blending cutting-edge technology with sustainability for a transformative impact on infrastructure development.',
   nusNote:
     'NUS is a global top-10 university (QS 2025) with leading rankings in Architecture & Built Environment and Construction Management research.',
+  // Optional: Add image path (e.g., '/Lab_Logo.png' or '/images/about-figure.png')
+  // image: '/Lab_Logo.png',
+  // imageAlt: 'CognitionX Lab Logo with NUS',
+  // imageCaption: 'Optional caption for the image',
 }
 
 /* ===== Openings (join us) ===== */
@@ -763,7 +868,8 @@ export const howToApply = {
 export type NewsItem = { id: string, date: string, title: string, href?: string }
 export const news: NewsItem[] = [
   { id: 'n1', date: 'Sep 2025', title: '🎉 Dr. Jinying Xu joined NUS Department of the Built Enviornment as Assistant Professor' },
-  { id: 'n2', date: 'Oct 2025', title: '🚀 CognitionX Research Group\'s website is live.' }
+  { id: 'n2', date: 'Oct 2025', title: '🚀 CognitionX Research Group\'s website is live.' },
+  { id: 'n3', date: '21 Nov 2025', title: '🎉 Dr. Jinying Xu is giving a seminar at NUSe on "on “Managing Complexities in Modular Construction and Mega Infrastructure Projects through Digital Technologies: Global Case Insights”' },
 ]
 
 export const map = {
