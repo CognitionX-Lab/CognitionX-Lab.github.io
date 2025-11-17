@@ -869,7 +869,7 @@ export type NewsItem = { id: string, date: string, title: string, href?: string 
 export const news: NewsItem[] = [
   { id: 'n1', date: 'Sep 2025', title: '🎉 Dr. Jinying Xu joined NUS Department of the Built Enviornment as Assistant Professor' },
   { id: 'n2', date: 'Oct 2025', title: '🚀 CognitionX Research Group\'s website is live.' },
-  { id: 'n3', date: '21 Nov 2025', title: '[Annocement] Dr. Jinying Xu is giving a seminar at NUSe on "on “Managing Complexities in Modular Construction and Mega Infrastructure Projects through Digital Technologies: Global Case Insights”' },
+  { id: 'n3', date: '21 Nov 2025', title: '📢 Dr. Jinying Xu is giving a seminar at NUSe on "on “Managing Complexities in Modular Construction and Mega Infrastructure Projects through Digital Technologies: Global Case Insights”' },
 ]
 
 export const map = {
