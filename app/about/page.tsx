@@ -41,10 +41,41 @@ export default function AboutPage() {
         ))}
       </div>
 
+      {about.secondaryImage && (
+        <div className="w-full max-w-4xl mx-auto">
+          <figure className="overflow-hidden rounded-xl2 border border-bordercolor/60 bg-surface shadow-md">
+            <Image
+              src={about.secondaryImage}
+              alt={about.secondaryImageAlt || 'About Cognition X Lab'}
+              width={1200}
+              height={600}
+              className="w-full h-auto object-contain"
+            />
+            {about.secondaryImageCaption && (
+              <figcaption className="p-4 text-sm text-neutralMid text-center border-t border-bordercolor/40">
+                {about.secondaryImageCaption}
+              </figcaption>
+            )}
+          </figure>
+        </div>
+      )}
+
       <div className="max-w-4xl mx-auto w-full px-4 md:px-0">
         <div className="rounded-xl2 border bg-panel p-5 md:p-6">
           <div className="font-semibold mb-2">About NUS</div>
-          <p className="text-sm text-neutralMid text-justify leading-relaxed">{about.nusNote}</p>
+          <p className="text-sm text-neutralMid text-justify leading-relaxed">
+            {about.nusNote}{' '}
+            {about.nusLinkHref && (
+              <Link
+                href={about.nusLinkHref}
+                target="_blank"
+                rel="noreferrer"
+                className="text-primary underline underline-offset-2 font-medium"
+              >
+                {about.nusLinkLabel || 'Learn more at NUS'}
+              </Link>
+            )}
+          </p>
         </div>
       </div>
 
