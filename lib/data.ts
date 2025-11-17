@@ -725,7 +725,7 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: 'Digitally Empowered Project Cognition for Sustainability', // ✅ real slug (no brackets)
+    slug: 'digitally-empowered-project-cognition-for-sustainability', 
     title: 'Digitally Empowered Project Cognition for Sustainability',
     summary:
       'IoT perception + cognitive learning + AI/robotic actuation to optimize efficiency, safety, and sustainability.',
