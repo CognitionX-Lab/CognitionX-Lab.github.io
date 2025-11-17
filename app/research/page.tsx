@@ -1,6 +1,6 @@
 import { researchOverview, projects } from '@/lib/data'
 import { SectionTitle } from '@/components/SectionTitle'
-import Link from 'next/link'
+//import Link from 'next/link'
 import { ProjectCard } from '@/components/ProjectCard'
 
 export default function ResearchPage() {
@@ -26,9 +26,7 @@ export default function ResearchPage() {
         <h3 className="text-xl font-semibold">Projects</h3>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {projects.map(p => (
-            <Link key={p.slug} href={`/projects/${p.slug}`}>
-              <ProjectCard project={p} clickable />
-            </Link>
+           <ProjectCard key={p.slug} project={p} clickable />
           ))}
         </div>
       </section>
