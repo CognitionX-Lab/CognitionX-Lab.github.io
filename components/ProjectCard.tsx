@@ -11,7 +11,7 @@ export function ProjectCard({ project, clickable }: { project: Project; clickabl
       )}
     >
       {project.coverImage ? (
-        <img src={project.coverImage} alt={project.title} className="w-full aspect-video object-cover" />
+        <img src={project.coverImage} alt={project.title} className="w-full aspect-video object-contain bg-panel" />
       ) : (
         <div className="w-full aspect-video bg-gradient-to-br from-panel to-panel/70 flex items-center justify-center text-sm text-neutralMid">
           Image coming soon
