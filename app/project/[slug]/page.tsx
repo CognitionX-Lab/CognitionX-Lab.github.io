@@ -91,7 +91,7 @@ export default function ProjectDetail({ params }: { params: { slug: string } }) 
           <img
             src={proj.coverImage}
             alt={proj.title}
-            className="w-full aspect-video object-cover hover:scale-[1.02] transition-transform duration-500"
+            className="w-full aspect-video object-contain bg-panel hover:scale-[1.02] transition-transform duration-500"
           />
         </div>
       )}
