@@ -730,7 +730,7 @@ export const projects: Project[] = [
     summary:
       'IoT perception + cognitive learning + AI/robotic actuation to optimize efficiency, safety, and sustainability.',
     coverImage: '/projects/digitally-empowered-cover.png',
-    tags: ['IoT', 'Cognition', 'AI/Robotics'],
+    tags: ['IoT', 'Cognition', 'AI', 'Robotics'],
     abstract:
       'We systematically integrate IoT-based perception, cognitive learning models, and actuation mechanisms to mimic human cognition in project decision-making.',
     members: ['Dr. Jinying Xu', 'Team'],
