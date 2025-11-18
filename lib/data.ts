@@ -729,7 +729,7 @@ export const projects: Project[] = [
     title: 'Digitally Empowered Project Cognition for Sustainability',
     summary:
       'IoT perception + cognitive learning + AI/robotic actuation to optimize efficiency, safety, and sustainability.',
-    coverImage: 'https://placehold.co/800x450/png?text=Project+Cognition',
+    coverImage: '/projects/digitally-empowered-cover.png',
     tags: ['IoT', 'Cognition', 'AI/Robotics'],
     abstract:
       'We systematically integrate IoT-based perception, cognitive learning models, and actuation mechanisms to mimic human cognition in project decision-making.',
