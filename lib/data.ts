@@ -37,7 +37,7 @@ export const people: Person[] = [
     links: {
       scholar: 'https://scholar.google.com/citations?user=McTBzwoAAAAJ&hl=en',
       linkedin: 'https://www.linkedin.com/in/jinying-xu-5a2394208',
-      website: 'https://eagletsuimars.github.io/',
+      website: 'https://cde.nus.edu.sg/dbe/staff/jinying-xu/',
       email: 'jinying.xu@nus.edu.sg',
     },
     cvUrl: '#',
