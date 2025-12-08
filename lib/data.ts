@@ -787,7 +787,7 @@ export const about: About = {
   image: '/slogan.png',
   imageAlt: 'Cognition X Lab Research Scope',
   imageCaption: 'Cognition X Lab Vision',
-  secondaryImageimage: '/Lab_Logo_title.png',
+  secondaryImage: '/Lab_Logo_title.png',
   secondaryImageAlt: 'Cognition X Lab',
   secondaryImageCaption: 'Cognition X Lab Logo',
   nusLinkLabel: 'Visit NUS',
