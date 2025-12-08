@@ -879,11 +879,10 @@ export const news: NewsItem[] = [
   { id: 'n1', date: 'Sep 2025', title: '🎉 Dr. Jinying Xu joined NUS Department of the Built Enviornment as Assistant Professor' },
   { id: 'n2', date: 'Oct 2025', title: '🚀 Cognition X Lab Group\'s website is live.' },
   { id: 'n3', date: '21 Nov 2025', title: '📢 Dr. Jinying Xu is giving a seminar at NUS on “Managing Complexities in Modular Construction and Mega Infrastructure Projects through Digital Technologies: Global Case Insights" (1:00-5:00pm, SDE 4 Level 4 Executive Room )' },
-  { id: 'n4', date: '15-16 Dec 2025', title: '📢 Dr. Jinying Xu is joining "NCTI-DCHK Conference 2025: Digital Transformation in Construction" and giving an invited talk "Digital-enabled Intelligent Carbon Management System: Key Elements and System Architecture" at the University of Hong Kong in HK, SAR' },
+  { id: 'n4', date: '15-16 Dec 2025', title: '📢 Dr. Jinying Xu is joining the "NCTI-DCHK Conference 2025: Digital Transformation in Construction" and giving an invited talk "Digital-enabled Intelligent Carbon Management System: Key Elements and System Architecture" at the University of Hong Kong in HK, SAR' },
   { id: 'n5', date: '17 Dec 2025', title: '📢 Dr. Jinying Xu is giving an invited talk "Towards Carbon Digital Twin: Status quo and future research" at the Department of Architecture and Civil Engineering, City University of Hong Kong.' },
   { id: 'n6', date: '18 Dec 2025', title: '📢 Dr. Jinying Xu is giving an invited talk "Digital technologies for intelligent carbon management" at the Department of Building and Real Estate, The Hong Kong Polytechnic University.' },
   { id: 'n7', date: '19 Dec 2025', title: '📢 Dr. Jinying Xu is giving an invited seminar "Advancing carbon management with ontology-driven data collection" at the Frontier Forum on Smart Construction and Smart City Research at Huazhong University of Science and Technology.' },
-
 ]
 
 export const map = {
