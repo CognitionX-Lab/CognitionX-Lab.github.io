@@ -46,7 +46,7 @@ export const people: Person[] = [
   {
     id: 'research engineer-1',
     name: 'Ruiyan Zheng',
-    role: 'Incoming Research Engineer',
+    role: 'Incoming Research Engineer/PhD student',
     group: 'PhD',
     avatar: '/people/Ruiyan.png',
     bio: 'Bio.',
