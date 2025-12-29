@@ -66,9 +66,10 @@ export function PersonaCard({ person, highlight, full, clickable }: { person: Pe
   )
 
   if (clickable) {
-    return <Link href={`/team/${person.slug}`} className="block">{content}</Link>
+    // We cast to any here ONLY if your Person type in lib/data.ts isn't updated yet.
+    // Ideally, once Step 1 is done, person.slug will work perfectly.
+    return <Link href={`/team/${(person as any).slug}`} className="block">{content}</Link>
   }
 
   return content
 }
-
