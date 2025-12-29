@@ -7,11 +7,12 @@ import { IconMail, IconScholar, IconGitHub, IconLinkedIn, IconWebsite } from '@/
 export async function generateStaticParams() {
   // Add a console log here to see it during the GitHub Action build
   console.log("BUILDING TEAM SLUGS for:", people.map(p => p.slug))
-
-  return people.map((person) => ({
-    slug: person.slug,
-  }))
+  return [
+    { slug: 'jinying-xu' },
+    { slug: 'ruiyan-zheng' }
+  ]
 }
+
 
 export default function Page({ params }: { params: { slug: string } }) {
   const person = people.find((p) => p.slug === params.slug)
