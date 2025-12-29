@@ -1,49 +1,166 @@
+import { notFound } from 'next/navigation'
 import { people } from '@/lib/data'
-import { PersonaCard } from '@/components/PersonaCard'
-import { SectionTitle } from '@/components/SectionTitle'
+import Link from 'next/link'
+import { IconMail, IconScholar, IconGitHub, IconLinkedIn, IconWebsite } from '@/components/Icons'
 
-const GROUP_ORDER = ['Postdoc', 'PhD', 'Masters', 'Undergrad', 'Visiting', 'Alumni'] as const
-const groupIndex = (g: string) => {
-  const i = GROUP_ORDER.indexOf(g as typeof GROUP_ORDER[number])
-  return i === -1 ? GROUP_ORDER.length : i
-}
-function intakeRank(intake?: string): number {
-  if (!intake) return Number.POSITIVE_INFINITY
-  const m = intake.match(/\b(Spring|Summer|Fall|Autumn|Winter)\s+(\d{4})\b/i)
-  if (!m) return Number.POSITIVE_INFINITY
-  const term = m[1].toLowerCase()
-  const year = parseInt(m[2], 10)
-  const order: Record<string, number> = { spring: 1, summer: 2, fall: 3, autumn: 3, winter: 4 }
-  return year * 10 + (order[term] ?? 99)
+export async function generateStaticParams() {
+  return people.map(p => ({ slug: p.slug }))
 }
 
-export default function TeamPage() {
-  const pi = people.find(p => p.group === 'PI')
-  const rest = people
-    .filter(p => p.group !== 'PI')
-    .sort((a, b) => {
-      const gi = groupIndex(a.group) - groupIndex(b.group)
-      if (gi !== 0) return gi
-      return intakeRank(a.intake) - intakeRank(b.intake)
-    })
+export default function TeamMemberDetail({ params }: { params: { slug: string } }) {
+  const person = people.find(p => p.slug === params.slug)
+  if (!person) return notFound()
+
+  // Extract institution from role if it contains NUS or similar
+  const extractInstitution = (role: string): string | null => {
+    if (role.includes('National University of Singapore') || role.includes('NUS')) {
+      return 'National University of Singapore'
+    }
+    return null
+  }
+
+  const institution = extractInstitution(person.role)
 
   return (
-    <div className="space-y-10">
-      <SectionTitle title="Principal Investigator" subtitle="" />
-      {pi && (
-        <section className="max-w-4xl">
-          <PersonaCard person={pi} full />
-        </section>
-      )}
+    <div className="pt-5">
+      <div className="container">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          {/* Left Column - Profile */}
+          <div className="lg:col-span-4 mb-8 lg:mb-0">
+            <div className="flex flex-col items-center">
+              <img
+                className="rounded-full border object-cover mb-6 w-[270px] h-[270px]"
+                src={person.avatar}
+                alt={person.name}
+              />
+              <div className="text-center mb-6">
+                <h2 className="text-2xl font-semibold mb-2">{person.name}</h2>
+                <h3 className="text-lg text-neutralMid mb-2">{person.role}</h3>
+                {institution && (
+                  <h3 className="text-base text-neutralMid">
+                    <span>{institution}</span>
+                  </h3>
+                )}
+              </div>
+              <ul className="flex items-center gap-4 mb-6" aria-hidden="true">
+                {person.links.email && (
+                  <li>
+                    <a
+                      href={`mailto:${person.links.email}`}
+                      aria-label="Email"
+                      className="text-neutralMid hover:text-primary transition-colors"
+                    >
+                      <IconMail width={20} height={20} />
+                    </a>
+                  </li>
+                )}
+                {person.links.linkedin && (
+                  <li>
+                    <a
+                      href={person.links.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="LinkedIn"
+                      className="text-neutralMid hover:text-primary transition-colors"
+                    >
+                      <IconLinkedIn width={20} height={20} />
+                    </a>
+                  </li>
+                )}
+                {person.links.scholar && (
+                  <li>
+                    <a
+                      href={person.links.scholar}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Google Scholar"
+                      className="text-neutralMid hover:text-primary transition-colors"
+                    >
+                      <IconScholar width={20} height={20} />
+                    </a>
+                  </li>
+                )}
+                {person.links.github && (
+                  <li>
+                    <a
+                      href={person.links.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="GitHub"
+                      className="text-neutralMid hover:text-primary transition-colors"
+                    >
+                      <IconGitHub width={20} height={20} />
+                    </a>
+                  </li>
+                )}
+                {person.links.website && (
+                  <li>
+                    <a
+                      href={person.links.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Website"
+                      className="text-neutralMid hover:text-primary transition-colors"
+                    >
+                      <IconWebsite width={20} height={20} />
+                    </a>
+                  </li>
+                )}
+              </ul>
+            </div>
+          </div>
 
-      <SectionTitle title="Team" subtitle="" />
-      <section>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {rest.map(p => (
-            <PersonaCard key={p.id} person={p} />
-          ))}
+          {/* Right Column - Content */}
+          <div className="lg:col-span-8">
+            <div className="space-y-6">
+              {/* Bio */}
+              <div>
+                <p className="text-neutralMid leading-relaxed">{person.bio}</p>
+              </div>
+
+              {/* Interests and Education */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {person.interests && person.interests.length > 0 && (
+                  <div>
+                    <div className="text-lg font-semibold mb-3 text-primary">Interests</div>
+                    <ul className="space-y-2 mb-0">
+                      {person.interests.map((interest, idx) => (
+                        <li key={idx} className="text-neutralMid">
+                          {interest}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                {person.education && person.education.length > 0 && (
+                  <div>
+                    <div className="text-lg font-semibold mb-3 text-primary">Education</div>
+                    <ul className="space-y-3 mb-0">
+                      {person.education.map((edu, idx) => (
+                        <li key={idx} className="text-neutralMid">
+                          <div className="font-medium">{edu.degree}{edu.year && `, ${edu.year}`}</div>
+                          <div className="text-sm">{edu.institution}</div>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
+
+        {/* Back Button */}
+        <div className="pt-8 text-center">
+          <Link
+            href="/team"
+            className="inline-flex items-center justify-center rounded-xl2 border px-5 py-2.5 hover:bg-panel transition"
+          >
+            ← Back to Team
+          </Link>
+        </div>
+      </div>
     </div>
   )
 }
+
