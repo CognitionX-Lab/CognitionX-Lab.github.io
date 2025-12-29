@@ -1,3 +1,4 @@
+
 import { people } from '@/lib/data'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
@@ -9,24 +10,14 @@ export async function generateStaticParams() {
   }))
 }
 
-export default function Page ({ params }: { params: { slug: string } }) {
+export default function Page({ params }: { params: { slug: string } }) {
   const person = people.find(p => p.slug === params.slug)
+  
   if (!person) {
     notFound()
   }
-return (
-    <main className="max-w-2xl mx-auto py-20 px-4">
-      <img src={person.avatar} className="w-32 h-32 rounded-full mx-auto" alt={person.name} />
-      <h1 className="text-3xl font-bold text-center mt-4">{person.name}</h1>
-      <p className="text-center text-neutralMid">{person.role}</p>
-      <div className="mt-8">
-        <p>{person.bio}</p>
-      </div>
-      {/* Add your other fields here */}
-    </main>
-  )
 
-  // Extract institution from role if it contains NUS or similar
+  // Define the helper function inside the component or outside
   const extractInstitution = (role: string): string | null => {
     if (role.includes('National University of Singapore') || role.includes('NUS')) {
       return 'National University of Singapore'
@@ -38,8 +29,9 @@ return (
 
   return (
     <div className="pt-5">
-      <div className="container">
+      <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          
           {/* Left Column - Profile */}
           <div className="lg:col-span-4 mb-8 lg:mb-0">
             <div className="flex flex-col items-center">
@@ -57,66 +49,39 @@ return (
                   </h3>
                 )}
               </div>
-              <ul className="flex items-center gap-4 mb-6" aria-hidden="true">
+              
+              <ul className="flex items-center gap-4 mb-6">
                 {person.links.email && (
                   <li>
-                    <a
-                      href={`mailto:${person.links.email}`}
-                      aria-label="Email"
-                      className="text-neutralMid hover:text-primary transition-colors"
-                    >
+                    <a href={`mailto:${person.links.email}`} className="text-neutralMid hover:text-primary transition-colors">
                       <IconMail width={20} height={20} />
                     </a>
                   </li>
                 )}
                 {person.links.linkedin && (
                   <li>
-                    <a
-                      href={person.links.linkedin}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="LinkedIn"
-                      className="text-neutralMid hover:text-primary transition-colors"
-                    >
+                    <a href={person.links.linkedin} target="_blank" rel="noopener noreferrer" className="text-neutralMid hover:text-primary transition-colors">
                       <IconLinkedIn width={20} height={20} />
                     </a>
                   </li>
                 )}
                 {person.links.scholar && (
                   <li>
-                    <a
-                      href={person.links.scholar}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="Google Scholar"
-                      className="text-neutralMid hover:text-primary transition-colors"
-                    >
+                    <a href={person.links.scholar} target="_blank" rel="noopener noreferrer" className="text-neutralMid hover:text-primary transition-colors">
                       <IconScholar width={20} height={20} />
                     </a>
                   </li>
                 )}
                 {person.links.github && (
                   <li>
-                    <a
-                      href={person.links.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="GitHub"
-                      className="text-neutralMid hover:text-primary transition-colors"
-                    >
+                    <a href={person.links.github} target="_blank" rel="noopener noreferrer" className="text-neutralMid hover:text-primary transition-colors">
                       <IconGitHub width={20} height={20} />
                     </a>
                   </li>
                 )}
                 {person.links.website && (
                   <li>
-                    <a
-                      href={person.links.website}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="Website"
-                      className="text-neutralMid hover:text-primary transition-colors"
-                    >
+                    <a href={person.links.website} target="_blank" rel="noopener noreferrer" className="text-neutralMid hover:text-primary transition-colors">
                       <IconWebsite width={20} height={20} />
                     </a>
                   </li>
@@ -128,30 +93,28 @@ return (
           {/* Right Column - Content */}
           <div className="lg:col-span-8">
             <div className="space-y-6">
-              {/* Bio */}
               <div>
                 <p className="text-neutralMid leading-relaxed">{person.bio}</p>
               </div>
 
-              {/* Interests and Education */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {person.interests && person.interests.length > 0 && (
                   <div>
                     <div className="text-lg font-semibold mb-3 text-primary">Interests</div>
-                    <ul className="space-y-2 mb-0">
+                    <ul className="space-y-2">
                       {person.interests.map((interest, idx) => (
-                        <li key={idx} className="text-neutralMid">
-                          {interest}
-                        </li>
+                        <li key={idx} className="text-neutralMid">{interest}</li>
                       ))}
                     </ul>
                   </div>
                 )}
-                {person.education && person.education.length > 0 && (
+                
+                {/* Check if person.education exists in your lib/data.ts interface */}
+                {(person as any).education && (person as any).education.length > 0 && (
                   <div>
                     <div className="text-lg font-semibold mb-3 text-primary">Education</div>
-                    <ul className="space-y-3 mb-0">
-                      {person.education.map((edu, idx) => (
+                    <ul className="space-y-3">
+                      {(person as any).education.map((edu: any, idx: number) => (
                         <li key={idx} className="text-neutralMid">
                           <div className="font-medium">{edu.degree}{edu.year && `, ${edu.year}`}</div>
                           <div className="text-sm">{edu.institution}</div>
@@ -178,4 +141,3 @@ return (
     </div>
   )
 }
-
