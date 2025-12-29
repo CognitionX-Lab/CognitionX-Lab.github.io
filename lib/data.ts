@@ -69,7 +69,7 @@ export const people: Person[] = [
       email: 'jinying.xu@nus.edu.sg',
     },
     cvUrl: '#',
-    joinDate?: 'Fall 2025',
+    joinDate: 'Fall 2025',
   },
   {
     id: 'phd-1',
