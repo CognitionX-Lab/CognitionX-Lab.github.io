@@ -1,10 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  trailingSlash: true, // This changes /team/slug to /team/slug/index.html
+  trailingSlash: true, 
   images: {
     unoptimized: true,
   },
+  // ONLY add this if your site is NOT at the main domain root
+  // basePath: '/repository-name', 
 };
 
 export default nextConfig;
