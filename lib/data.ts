@@ -39,7 +39,7 @@ export const people: Person[] = [
     role: 'Assistant Professor, Department of the Built Environment (DBE), College of Design and Engineering (CDE), National University of Singapore (NUS)',
     group: 'PI',
     avatar: '/people/jinying-xu.jpg',
-    bio: 'Marie Skłodowska–Curie Fellow (2022–2025) at University of Cambridge, Post-doctoral fellow (HKU, 2021-2022)',
+    bio: 'Marie Skłodowska–Curie Fellow (2022–2025) at University of Cambridge, Post-doctoral Fellow (2021-2022) at the University of Hong Kong',
     interests: ['Smart Construction', 'Digital Technologies', 'Digital Transformation', 'Data Science', 'Sustainable Infrastructure', 'Systems Thinking', 'Organization Technology Transformation', 'Context-awareness', 'Digital Twins', 'Cognitive Facility Management', 'Construction Project Management', 'Lean Construction'],
     education: [
       {
@@ -76,7 +76,7 @@ export const people: Person[] = [
     id: 'phd-1',
     slug: 'ruiyan-zheng',
     name: 'Ruiyan Zheng',
-    role: 'Incoming Research Engineer/PhD student',
+    role: 'Research Engineer/PhD student',
     group: 'PhD',
     avatar: '/people/Ruiyan.png',
     bio: 'Ruiyan is a PhD student researching AI-driven project management solutions for construction. His work involves machine learning applications for risk prediction and resource optimization.',
@@ -104,7 +104,7 @@ export const people: Person[] = [
     id: 'ms-1',
     slug: 'ruixuan-qi',
     name: 'Ruixuan Qi',
-    role: 'Part-Time Research Assistant (MSC Student)',
+    role: 'Part-Time Research Assistant (MSc Student)',
     group: 'Masters',
     avatar: '/people/Ruixuan.png',
     bio: 'Ruixuan is pursuing his MSc degree in Smart Industries and Digital Transformation at National University of Singapore. He works as a part-time RA on lean construction and process optimisation',
