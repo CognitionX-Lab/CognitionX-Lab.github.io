@@ -1,10 +1,11 @@
-import { notFound } from 'next/navigation'
 import { people } from '@/lib/data'
 import Link from 'next/link'
 import { IconMail, IconScholar, IconGitHub, IconLinkedIn, IconWebsite } from '@/components/Icons'
 
 export async function generateStaticParams() {
-  return people.map(p => ({ slug: p.slug }))
+  return people.map((person) => ({
+    slug: person.slug,
+  }))
 }
 
 export default function TeamMemberDetail({ params }: { params: { slug: string } }) {
