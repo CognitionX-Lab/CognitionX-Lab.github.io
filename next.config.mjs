@@ -5,8 +5,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // If your URL is https://CognitionX-Lab.github.io/ (no subfolder), 
-  // you do NOT need basePath.
 };
 
 export default nextConfig;
