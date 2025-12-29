@@ -13,6 +13,11 @@ export type Person = {
   avatar: string
   bio: string
   interests: string[]
+  education?: Array<{
+    degree: string
+    institution: string
+    year?: string
+  }>
   links: {
     scholar?: string
     github?: string
@@ -32,8 +37,30 @@ export const people: Person[] = [
     role: 'Assistant Professor, Department of the Built Environment (DBE), College of Design and Engineering (CDE), National University of Singapore (NUS)',
     group: 'PI',
     avatar: '/people/jinying-xu.jpg',
-    bio: 'Marie Skłodowska–Curie Fellow (2022–2025) at University of Cambridge. PhD (HKU, 2021).',
+    bio: 'Marie Skłodowska–Curie Fellow (2022–2025) at University of Cambridge, Post-doctoral fellow (HKU, 2021-2022)',
     interests: ['Smart Construction', 'Digital Technologies', 'Digital Transformation', 'Data Science', 'Sustainable Infrastructure', 'Systems Thinking', 'Organization Technology Transformation', 'Context-awareness', 'Digital Twins', 'Cognitive Facility Management', 'Construction Project Management', 'Lean Construction'],
+    education: [
+      {
+        degree: 'PhD in Digital Construction',
+        institution: 'The University of Hong Kong',
+        year: '2021'
+      },
+      {
+        degree: 'MSc in Project Management',
+        institution: 'Tongji University',
+        year: '2017'
+      },
+      {
+        degree: 'BEng in Engineering Management',
+        institution: 'Harbin Institute of Technology',
+        year: '2014'
+      },
+      {
+        degree: 'LLB in Sociology',
+        institution: 'Harbin Institute of Technology',
+        year: '2014'
+      }
+    ],
     links: {
       scholar: 'https://scholar.google.com/citations?user=McTBzwoAAAAJ&hl=en',
       linkedin: 'https://www.linkedin.com/in/jinying-xu-5a2394208',
@@ -41,28 +68,54 @@ export const people: Person[] = [
       email: 'jinying.xu@nus.edu.sg',
     },
     cvUrl: '#',
-    intake: 'Fall 2025',
+    joinDate?: 'Fall 2025',
   },
   {
-    id: 'research engineer-1',
+    id: 'phd-1',
     name: 'Ruiyan Zheng',
     role: 'Incoming Research Engineer/PhD student',
     group: 'PhD',
     avatar: '/people/Ruiyan.png',
-    bio: 'Bio.',
-    interests: ['interest 1', 'interest 2'],
-    links: { scholar: '#', linkedin: '#' },
-    intake: 'Jan 2026',
+    bio: 'Ruiyan is a PhD student researching AI-driven project management solutions for construction. His work involves machine learning applications for risk prediction and resource optimization.',
+    interests: ['Lean construction', 'Project schedule optimisation', 'Reinforcement learning'],
+    education: [
+      {
+        degree: 'Master in Construction Management',
+        institution: 'Dalian University of Technology',
+        year: '2025'
+      },
+      {
+        degree: 'BEng in Construction Management',
+        institution: 'Qingdao University of Technology',
+        year: '2022'
+      }
+    ],
+    links: {
+      github: 'https://github.com/ruiyan-zheng',
+      linkedin: 'https://www.linkedin.com/in/ruiyan-zheng',
+      email: 'ruiyan-zheng@u.nus.edu',
+    },
+    intake: 'Spring 2026',
   },
   {
     id: 'ms-1',
     name: 'Ruixuan Qi',
-    role: 'Graduate Research Assistant',
+    role: 'Part-Time Research Assistant (MSC Student)',
     group: 'Masters',
     avatar: '/people/Ruixuan.png',
-    bio: 'Bio.',
-    interests: ['interest 1', 'interest 2'],
-    links: { github: '#', linkedin: '#' },
+    bio: 'Ruixuan is pursuing his MSc degree in Smart Industries and Digital Transformation at National University of Singapore. He works as a part-time RA on lean construction and process optimisation',
+    interests: ['Scheduling', 'Dynamic programming'],
+    education: [
+      {
+        degree: 'BEng in Computer Science and Engineering',
+        institution: 'The Chinese University of Hong Kong (Shenzhen)',
+        year: '2025'
+      }
+    ],
+    links: {
+      linkedin: 'https://www.linkedin.com/in/ruixuan-qi',
+      email: 'ruixuan-qi@u.nus.edu',
+    },
     intake: 'Fall 2025',
   }
 ]
