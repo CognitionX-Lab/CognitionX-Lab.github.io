@@ -33,6 +33,7 @@ export type Person = {
 export const people: Person[] = [
   {
     id: 'pi-1',
+    slug: 'jinying-xu',
     name: 'Dr. Jinying Xu',
     role: 'Assistant Professor, Department of the Built Environment (DBE), College of Design and Engineering (CDE), National University of Singapore (NUS)',
     group: 'PI',
@@ -72,6 +73,7 @@ export const people: Person[] = [
   },
   {
     id: 'phd-1',
+    slug: 'ruiyan-zheng',
     name: 'Ruiyan Zheng',
     role: 'Incoming Research Engineer/PhD student',
     group: 'PhD',
@@ -99,6 +101,7 @@ export const people: Person[] = [
   },
   {
     id: 'ms-1',
+    slug: 'ruixuan-qi',
     name: 'Ruixuan Qi',
     role: 'Part-Time Research Assistant (MSC Student)',
     group: 'Masters',
