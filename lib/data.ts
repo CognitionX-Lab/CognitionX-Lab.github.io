@@ -7,6 +7,7 @@ export const site = {
 /* ===== People ===== */
 export type Person = {
   id: string
+  slug: string
   name: string
   role: string
   group: 'PI' | 'Postdoc' | 'PhD' | 'Masters' | 'Undergrad' | 'Visiting' | 'Alumni'
