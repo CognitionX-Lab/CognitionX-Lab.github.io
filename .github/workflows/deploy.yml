@@ -27,6 +27,13 @@ jobs:
       - name: Build and Export
         run: npm run build
 
+      - name: Static HTML export
+        run: npm run build
+
+      - name: Fix for GitHub Pages 404
+      # This copies your custom 404 page to the root so GitHub can use it
+        run: cp out/404/index.html out/404.html
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
