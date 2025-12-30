@@ -766,7 +766,7 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: 'data science and digital technologies for intelligent carbon management', 
+    slug: 'intelligent-carbon-management', 
     title: 'Data science and digital technologies for intelligent carbon management in the whole life of highway assets',
     summary:
       'Comprehensive carbon data ontology, trustworthy carbon data model, intelligent carbon management system framework, integrated carbon digital twin',
@@ -780,7 +780,7 @@ export const projects: Project[] = [
     paperUrl: 'https://doi.org/10.1016/j.envsci.2024.103935'
   },
    {
-    slug: 'digitally-empowered-project-cognition-for-sustainability', 
+    slug: 'project-cognition', 
     title: 'Digitally Empowered Project Cognition for Sustainability',
     summary:
       'IoT perception + cognitive learning + AI/robotic actuation to optimize efficiency and sustainability.',
