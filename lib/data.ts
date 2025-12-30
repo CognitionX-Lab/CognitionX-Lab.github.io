@@ -775,9 +775,23 @@ export const projects: Project[] = [
     abstract:
       'This project develops a standardised data model that can be employed for consistent carbon calculation, assessment, and optimisation by future road developers. A mixed research method with interviews, organisational archival analysis, and ontology modelling is used. Four research objectives are outlined: (1) to review existing carbon management theories and practices, attainable advanced technologies for carbon sensing and monitoring, data analysing, sharing, and visualisation; (2) to develop a standardised data model for carbon management; (3) to develop a set of interoperable protocols for data collection, storage, analysis, sharing, and visualisation; and (4) to prepare the data model in a way that is adaptable to the foreseeable adoption of new technologies in the next five years. A carbon data trustworthy framework and an intelligent carbon data management system architecture are developed. ',
     members: ['Dr. Jinying Xu'],
-    grant: 'EU MSCA Future Roads, University of Cambridge',
+    grant: 'EU MSCA Future Roads, University of Cambridge, (Closing, 2022-2025)',
     demoUrl: 'https://drf.eng.cam.ac.uk/staff/dr-jinying-xu',
     paperUrl: 'https://doi.org/10.1016/j.envsci.2024.103935'
+  },
+    {
+    slug: 'UTS-data-ontology', 
+    title: 'Data ontology for climate resilience of urban transportation infrastructure',
+    summary:
+      'Urban transportation systems (UTS) play a pivotal role in our society, but its sustainability is increasingly imperiled by the escalating climate crisis. It is paramount to enhance climate resilience of UTS, which heavily relies on data-driven and evidence-based decision-making.
+      'Transportation data is sourced from a multitude of sensors, devices, and data providers, each utilizing distinct data models and standards. However, with the increasing volume and variety of data about different aspects of the complex UTS, the logical and connecting relationship of the datasets and how they can be put together to make sense of the full-picture situation is unclear. This gap hinders the application of data science, machine learning, and AI in enabling UTS to confront climate crisis. There is an urgent need to harmonize and streamline the data ontology for UTS. A data ontology serves as the foundational framework, defining the semantics and relationships among various transportation-related concepts and entities. It is required for the increasing availability of technology applications to share data. A suitable data ontology can make the inductive leap to understand complex systems through standardized data representation, enhanced data integration, deeper semantic comprehension, and better machine learning.
+      'Our research project aims to develop a comprehensive data ontology for climate resilience in UTS. It capitalizes on the collective strengths of two research teams from esteemed institutions—Cambridge and Tsinghua. This collaboration combines the edges of Tsinghua's 2 million yuan NSFC project 'Research on the theories and methods for safety and resilience oriented inter-system and inter-dimensional planning of urban infrastructure systems'' led by Prof. Dongping Fang and Dr. Nan Li, and a EU MSCA project “Data Science and digital technologies for intelligent carbon management in the whole life of highway assets” led by Dr. Jinying Xu and supervised by Dr. Kristen MacAskill at Cambridge.
+    coverImage: '/projects/UTS resilience ontology.png',
+    tags: ['Data ontology', 'urban transportation system', 'climaye resilience'],
+    abstract:
+      'This project develops a standardised data model that can be employed for consistent carbon calculation, assessment, and optimisation by future road developers. A mixed research method with interviews, organisational archival analysis, and ontology modelling is used. Four research objectives are outlined: (1) to review existing carbon management theories and practices, attainable advanced technologies for carbon sensing and monitoring, data analysing, sharing, and visualisation; (2) to develop a standardised data model for carbon management; (3) to develop a set of interoperable protocols for data collection, storage, analysis, sharing, and visualisation; and (4) to prepare the data model in a way that is adaptable to the foreseeable adoption of new technologies in the next five years. A carbon data trustworthy framework and an intelligent carbon data management system architecture are developed. ',
+    members: ['Dr. Jinying Xu', 'Dr. Kristen MacAskill (Cambridge), Dr. Nan Li (Tsinghua), Mr. Mukun Liu (Tsinghua)'],
+    grant: 'Royal Society-NSFC Internatioanl Exchanges (Ongoing, 2024-2026)'
   },
    {
     slug: 'project-cognition', 
@@ -789,10 +803,7 @@ export const projects: Project[] = [
     abstract:
       'We systematically integrate IoT-based perception, cognitive learning models, and actuation mechanisms to mimic human cognition in project decision-making for lean construction.',
     members: ['Dr. Jinying Xu', 'Team'],
-    grant: 'NUS Start-Up Grant (2025-2029), S$500,000',
-    repoUrl: 'https://github.com/example',
-    demoUrl: 'https://demo.example.com',
-    paperUrl: 'https://scholar.google.com/example'
+    grant: 'NUS Start-Up Grant (Ongoing, 2025-2029), S$500,000',
   },
 ]
 
