@@ -775,7 +775,7 @@ export const projects: Project[] = [
     abstract:
       'This project develops a standardised data model that can be employed for consistent carbon calculation, assessment, and optimisation by future road developers. A mixed research method with interviews, organisational archival analysis, and ontology modelling is used. Four research objectives are outlined: (1) to review existing carbon management theories and practices, attainable advanced technologies for carbon sensing and monitoring, data analysing, sharing, and visualisation; (2) to develop a standardised data model for carbon management; (3) to develop a set of interoperable protocols for data collection, storage, analysis, sharing, and visualisation; and (4) to prepare the data model in a way that is adaptable to the foreseeable adoption of new technologies in the next five years. A carbon data trustworthy framework and an intelligent carbon data management system architecture are developed. ',
     members: ['Dr. Jinying Xu'],
-    grant: 'EU MSCA Future Roads, University of Cambridge, (Closing, 2022-2025)',
+    grant: 'EU MSCA Future Roads, University of Cambridge (Closing, 2022-2025)',
     demoUrl: 'https://drf.eng.cam.ac.uk/staff/dr-jinying-xu',
     paperUrl: 'https://doi.org/10.1016/j.envsci.2024.103935'
   },
@@ -793,7 +793,7 @@ export const projects: Project[] = [
 
 
     Our research project aims to develop a comprehensive data ontology for climate resilience in UTS. It capitalizes on the collective strengths of two research teams from esteemed institutions—Cambridge and Tsinghua. This collaboration combines the edges of Tsinghua's 2-million-yuan NSFC project “Research on the theories and methods for safety and resilience oriented inter-system and inter-dimensional planning of urban infrastructure systems” led by Prof. Dongping Fang and Dr. Nan Li, and a EU MSCA project “Data Science and digital technologies for intelligent carbon management in the whole life of highway assets” led by Dr. Jinying Xu and supervised by Dr. Kristen MacAskill at Cambridge.`, // <--- Closing backtick
-    members: ['Dr. Jinying Xu', 'Dr. Kristen MacAskill (Cambridge), Dr. Nan Li (Tsinghua), Mr. Mukun Liu (Tsinghua)'],
+    members: ['Dr. Jinying Xu', 'Dr. Kristen MacAskill (Cambridge)', 'Dr. Nan Li (Tsinghua)', 'Mr. Mukun Liu (Tsinghua)'],
     grant: 'Royal Society-NSFC Internatioanl Exchanges (Ongoing, 2024-2026)'
   },
    {
@@ -804,7 +804,7 @@ export const projects: Project[] = [
     coverImage: '/projects/digitally-empowered-cover.png',
     tags: ['Digitalisation', 'Project management', 'Cognition', 'AI', 'Sustainability'],
     abstract:
-      'We systematically integrate IoT-based perception, cognitive learning models, and actuation mechanisms to mimic human cognition in project decision-making for lean construction.',
+      'We envision a future where cognitive technologies empower project teams to build smarter, greener, and more resilient environments—making every project a model of adaptive, data-driven excellence. This interdisciplinary research fuses smart data integration, digital cognition, and automation to optimise decision-making, reduce lifecycle carbon, and enhance the resilience of modern built environments. It includes three key subtopics that are interconnected with each other: (1) Perception: leveraging IoT, sensing technologies, robots, digital systems to collect data to systematically perceive data flow of process, material and carbon, project behaviours, and key performance indicators. (2) Learning: cognitive computing to make sense of project contexts, empower projects with cognition abilities to adapt project processes and structures with modern methods of engineering to enhance key performance indicators regarding cost effectiveness, safety, lean principles, and sustainability. (3) Actuation: Human-AI/Robot augmentation to (semi-)automatically implement optimised activities in dynamic and complex construction environments to improve the efficiency, safety, and sustainability of projects and organisations. The project will advance the cognitive abilities of project management organisations to help achieve lean principles in modern construction engineering.',
     members: ['Dr. Jinying Xu', 'Team'],
     grant: 'NUS Start-Up Grant (Ongoing, 2025-2029), S$500,000',
   },
