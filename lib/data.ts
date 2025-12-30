@@ -779,7 +779,7 @@ export const projects: Project[] = [
     demoUrl: 'https://drf.eng.cam.ac.uk/staff/dr-jinying-xu',
     paperUrl: 'https://doi.org/10.1016/j.envsci.2024.103935'
   },
-    {
+  {
     slug: 'UTS-data-ontology', 
     title: 'Data ontology for climate resilience of urban transportation infrastructure',
     summary: `The core purpose is to address a critical gap in the data management of UTS by leveraging the background projects from two teams. By developing a data ontology, we aim to harmonize the diverse sources of UTS data, providing a common language and structure to enhance data integration and interoperability. This will empower transportation stakeholders to organize data to empower machine learning, AI, and make well-informed decisions for both climate resilience.',
