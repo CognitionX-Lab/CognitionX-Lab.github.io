@@ -764,7 +764,7 @@ export type Project = {
   paperUrl?: string
 }
 
-export const projects: Project[1] = [
+export const projects: Project[] = [
   {
     slug: 'data science and digital technologies for intelligent carbon management', 
     title: 'Data science and digital technologies for intelligent carbon management in the whole life of highway assets',
@@ -779,10 +779,7 @@ export const projects: Project[1] = [
     demoUrl: 'https://drf.eng.cam.ac.uk/staff/dr-jinying-xu',
     paperUrl: 'https://doi.org/10.1016/j.envsci.2024.103935'
   },
-]
-
-export const projects: Project[2] = [
-  {
+   {
     slug: 'digitally-empowered-project-cognition-for-sustainability', 
     title: 'Digitally Empowered Project Cognition for Sustainability',
     summary:
