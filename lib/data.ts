@@ -766,14 +766,31 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: 'data science and digital technologies for intelligent carbon management', 
+    title: 'Data science and digital technologies for intelligent carbon management in the whole life of highway assets',
+    summary:
+      'Comprehensive carbon data ontology, trustworthy carbon data model, intelligent carbon management system framework, integrated carbon digital twin',
+    coverImage: '/projects/intelligent carbon management system framework.png',
+    tags: ['Data science', 'Carbon management', 'Digital twin', 'Ontology'],
+    abstract:
+      'This project develops a standardised data model that can be employed for consistent carbon calculation, assessment, and optimisation by future road developers. A mixed research method with interviews, organisational archival analysis, and ontology modelling is used. Four research objectives are outlined: (1) to review existing carbon management theories and practices, attainable advanced technologies for carbon sensing and monitoring, data analysing, sharing, and visualisation; (2) to develop a standardised data model for carbon management; (3) to develop a set of interoperable protocols for data collection, storage, analysis, sharing, and visualisation; and (4) to prepare the data model in a way that is adaptable to the foreseeable adoption of new technologies in the next five years. A carbon data trustworthy framework and an intelligent carbon data management system architecture are developed. ',
+    members: ['Dr. Jinying Xu'],
+    grant: 'EU MSCA Future Roads, University of Cambridge',
+    demoUrl: 'https://drf.eng.cam.ac.uk/staff/dr-jinying-xu',
+    paperUrl: 'https://doi.org/10.1016/j.envsci.2024.103935'
+  },
+]
+
+export const projects: Project[] = [
+  {
     slug: 'digitally-empowered-project-cognition-for-sustainability', 
     title: 'Digitally Empowered Project Cognition for Sustainability',
     summary:
-      'IoT perception + cognitive learning + AI/robotic actuation to optimize efficiency, safety, and sustainability.',
+      'IoT perception + cognitive learning + AI/robotic actuation to optimize efficiency and sustainability.',
     coverImage: '/projects/digitally-empowered-cover.png',
-    tags: ['IoT', 'Cognition', 'AI', 'Robotics'],
+    tags: ['IoT', 'Cognition', 'AI'],
     abstract:
-      'We systematically integrate IoT-based perception, cognitive learning models, and actuation mechanisms to mimic human cognition in project decision-making.',
+      'We systematically integrate IoT-based perception, cognitive learning models, and actuation mechanisms to mimic human cognition in project decision-making for lean construction.',
     members: ['Dr. Jinying Xu', 'Team'],
     grant: 'NUS Start-Up Grant (2025-2029), S$500,000',
     repoUrl: 'https://github.com/example',
@@ -784,9 +801,9 @@ export const projects: Project[] = [
 
 /* ===== Research Overview (from flyer) ===== */
 export const researchOverview = {
-  tagline: 'Digitally Empowered Project Cognition for Sustainability',
+  tagline: 'Integrated digital technologies and data fusion for project cognition to support lean construction, net-zero carbon management, and climate resilience',
   blurb:
-    'An interdisciplinary initiative to enhance project decision-making by mimicking human cognition—optimizing efficiency, safety, and sustainability via IoT-based perception, cognitive learning, and AI/robotic actuation.',
+    'An interdisciplinary initiative to enhance project decision-making by mimicking human cognition—optimizing efficiency and sustainability via IoT-based perception, cognitive learning, and AI/robotic actuation.',
   pillars: [
     {
       title: 'Perception',
