@@ -82,14 +82,24 @@ export default function JoinUsPage() {
     <ul className="list-disc ml-6 space-y-1">
       <li>
         <a
-          href="https://nusgs.nus.edu.sg/scholarships/data-science-scholarship"
+          href="https://nusgs.nus.edu.sg/scholarships/presidents-graduate-fellowship/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-primary underline"
         >
-          NUS Data Science Scholarship
+          President’s Graduate Fellowship
         </a>
       </li>
+      <li>
+        <a
+          href="https://nusgs.nus.edu.sg/scholarships/nus-research-scholarship/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary underline"
+        >
+          NUS Research Scholarship 
+        </a>
+      </li> 
       <li>
         <a
           href="https://nusgs.nus.edu.sg/scholarships/nus-asean-research-scholarship"
@@ -98,6 +108,36 @@ export default function JoinUsPage() {
           className="text-primary underline"
         >
           NUS ASEAN Research Scholarship
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://nusgs.nus.edu.sg/scholarships/commonwealth-scholarship/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary underline"
+        >
+          Commonwealth Scholarship
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://nusgs.nus.edu.sg/scholarships/ai-singapore-scholarship"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary underline"
+        >
+          AI Singapore Scholarship
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://nusgs.nus.edu.sg/scholarships/data-science-scholarship"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary underline"
+        >
+          NUS Data Science Scholarship
         </a>
       </li>
       <li>
