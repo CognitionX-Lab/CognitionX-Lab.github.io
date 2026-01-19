@@ -878,7 +878,7 @@ export const openings = [
   // ...existing openings...
   {
     id: 'open-phd',
-    title: 'PhD Positions (Fall 2026)',
+    title: 'PhD Positions (Open)',
     active: true,
     description:
       'Candidates who are good at Building/Infrastructure Informatics,  Data Science, Knowledge Graph, or Ontology Mapping are strongly encouraged to apply',
@@ -925,9 +925,9 @@ export const openings = [
 export const requirements = {
   postdoc: [
     'PhD completed in Built Environment, Engineering, Computer Science, or related field.',
-    'Strong track record in research (publications, projects) related to IoT, digital twins, robotics, AI, or project analytics.',
+    'Strong track record in research (publications, projects) related to IoT, digital twins, robotics, AI, sustainability (carbon management and infrastructure resilience), or project analytics.',
     'Experience in independent research and mentoring junior team members.',
-    'Programming and data analysis skills: Python/R/SQL/Julia; familiarity with ML, NLP, or LLM workflows.',
+    'Programming and data analysis skills: Python/R/SQL/Julia; familiarity with Neo4j, DL, ML, NLP, or LLM workflows.',
     'Ability to work collaboratively in a multidisciplinary team and lead research projects.',
     'Open science mindset: reproducible research, documentation, code sharing.'
   ],
