@@ -8,8 +8,135 @@ export default function JoinUsPage() {
 
   return (
     <div className="space-y-12">
-      {/* ...existing sections ... */}
+      {/* --- SECTION 1: Why Join Us --- */}
+      <section className="space-y-4">
+        <SectionTitle title="Why Join Us?" subtitle="" />
+        <div className="text-neutralMid text-sm leading-relaxed space-y-3">
+          <p>
+            Welcome to the <strong>Cognition X Lab</strong> at the National University of Singapore (NUS)!
+            Our cross-disciplinary research lab focuses on data- and digitalisation-driven project cognition
+            and system resilience for infrastructure and buildings in the built environment.
+          </p>
+          <p>
+            By joining our lab, you will gain hands-on experience in data science, AI, digital technologies,
+            systems engineering, and sustainability for the built environment. You will learn coding, data
+            analysis, scientific writing, and presenting your work, while collaborating with a supportive team.
+          </p>
+          <p>
+            Our mission is to design, build, and evaluate data-centric cognitive systems (“project brain”) that
+            perceive, learn, and actuate in complex environments to improve efficiency, safety, sustainability, and resilience.
+            We value innovation, collaboration, excellence, and critical thinking.
+          </p>
+          <p>
+            NUS provides a vibrant, interdisciplinary, and innovation-driven environment. Singapore is cosmopolitan,
+            English-speaking, safe, and highly efficient — a perfect place to live and work.
+          </p>
+        </div>
+      </section>
 
+      {/* --- SECTION 2: Guidelines --- */}
+      <section className="space-y-4">
+        <SectionTitle title="General Application Guidelines" subtitle="" />
+        <div className="text-sm text-neutralMid leading-relaxed space-y-3">
+          <p>
+            <strong>Application timeline and requirements:</strong> NUS welcomes outstanding students with excellent
+            academic achievements from all over the world. Make sure you meet requirements as listed at{' '}
+            <a
+              href="https://cde.nus.edu.sg/graduate/graduate-programmes-by-research/how-to-apply/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary underline"
+            >
+              Graduate Programmes by Research - How to Apply - College of Design and Engineering
+            </a>.
+          </p>
+
+          <p>
+            <strong>Scholarships:</strong> We offer various scholarships (as listed below), but they can be very
+            competitive. Study the requirements and restrictions carefully. You are more competitive if you graduated
+            from a top university with good academic records (First-class honours, high GPA, excellent English test
+            results, publications). Less well-represented nationalities could apply for non-restricted scholarships such
+            as the NUS ASEAN Research Scholarship, Commonwealth Scholarship, NUS SINGA Scholarship, etc.
+          </p>
+
+          <p>
+            <strong>More information:</strong> Visit the{' '}
+            <a
+              href="https://nusgs.nus.edu.sg"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary underline"
+            >
+              NUS Graduate School (NUSGS)
+            </a>{' '}
+            and{' '}
+            <a
+              href="https://cde.nus.edu.sg/graduate/scholarship-opportunities/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary underline"
+            >
+              Scholarship Opportunities - College of Design and Engineering
+            </a>.
+          </p>
+
+          <ul className="list-disc ml-6 space-y-1">
+            <li>
+              <a href="https://nusgs.nus.edu.sg/scholarships/presidents-graduate-fellowship/" target="_blank" rel="noopener noreferrer" className="text-primary underline">President’s Graduate Fellowship</a>
+            </li>
+            <li>
+              <a href="https://nusgs.nus.edu.sg/scholarships/nus-research-scholarship/" target="_blank" rel="noopener noreferrer" className="text-primary underline">NUS Research Scholarship</a>
+            </li>
+            <li>
+              <a href="https://nusgs.nus.edu.sg/scholarships/nus-asean-research-scholarship" target="_blank" rel="noopener noreferrer" className="text-primary underline">NUS ASEAN Research Scholarship</a>
+            </li>
+            <li>
+              <a href="https://nusgs.nus.edu.sg/scholarships/commonwealth-scholarship/" target="_blank" rel="noopener noreferrer" className="text-primary underline">Commonwealth Scholarship</a>
+            </li>
+            <li>
+              <a href="https://nusgs.nus.edu.sg/scholarships/ai-singapore-scholarship" target="_blank" rel="noopener noreferrer" className="text-primary underline">AI Singapore Scholarship</a>
+            </li>
+            <li>
+              <a href="https://nusgs.nus.edu.sg/scholarships/data-science-scholarship" target="_blank" rel="noopener noreferrer" className="text-primary underline">NUS Data Science Scholarship</a>
+            </li>
+            <li>
+              <a href="https://nusgs.nus.edu.sg/scholarships/nus-industry-relevant-phd-scholarship-nus-irp" target="_blank" rel="noopener noreferrer" className="text-primary underline">NUS Industry-Relevant PhD Scholarship (NUS-IRP)</a>
+            </li>
+            <li>
+              <a href="https://nusgs.nus.edu.sg/scholarships/nus-singa-scholarship" target="_blank" rel="noopener noreferrer" className="text-primary underline">NUS SINGA Scholarship</a>
+            </li>
+          </ul>
+
+          <p>
+            <strong>Do your homework:</strong> Read the lab manual first on the Lab “Resources” page (
+            <a href="/resources" target="_blank" rel="noopener noreferrer" className="text-primary underline">Link</a>).
+            Understand the lab, review our research scope, and ensure your interests align with our focus.
+            Tailor your application carefully.
+          </p>
+
+          <p>
+            <strong>Before you apply:</strong> Reach out to <strong>Dr. Jinying Xu</strong> before submitting your
+            application. Explain how your expertise and skills contribute to lab research, which funding you would pursue
+            (if applying for a scholarship, specify which one you are eligible for and interested in). Include your CV,
+            transcripts, an initial research proposal (as outlined in the lab manual), and optionally your publication
+            links or GitHub pages.
+          </p>
+
+          <p>
+            <strong>Other helpful information:</strong>{' '}
+            <a
+              href="https://nusgs.nus.edu.sg/cost-of-living/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary underline"
+            >
+              Cost of Living : NUS Graduate School (NUSGS)
+            </a>
+          </p>
+        </div>
+      </section>
+
+      {/* --- SECTION 3: Current Openings --- */}
       <section className="space-y-6">
         <SectionTitle title="Current Openings" subtitle="" />
         {active.length > 0 ? (
@@ -30,6 +157,7 @@ export default function JoinUsPage() {
         )}
       </section>
 
+      {/* --- SECTION 4: Past Openings --- */}
       {inactive.length > 0 && (
         <section className="space-y-6">
           <SectionTitle title="Past Openings" subtitle="Archived / closed postings" />
@@ -114,7 +242,8 @@ function OpeningCard({
 
       {open && (
         <div id={`opening-${openingId}`} className="border-t px-5 py-4 grid gap-6 md:grid-cols-2">
-          <section className="rounded-xl2 border bg-panel p-4">
+          {/* Fixed typo: rounded-xl2 -> rounded-xl */}
+          <section className="rounded-xl border bg-panel p-4">
             <div className="text-sm font-semibold mb-2">Specific Requirements</div>
             <ul className="list-disc ml-5 space-y-2 text-sm text-neutralMid">
               {roleRequirements.map((r, i) => (
@@ -123,7 +252,8 @@ function OpeningCard({
             </ul>
           </section>
 
-          <section className="rounded-xl2 border bg-panel p-4">
+          {/* Fixed typo: rounded-xl2 -> rounded-xl */}
+          <section className="rounded-xl border bg-panel p-4">
             <div className="text-sm font-semibold mb-2">How to Apply</div>
             <ul className="list-decimal ml-5 space-y-2 text-sm">
               {howToApply.items.map((t, i) => (
@@ -168,218 +298,6 @@ function NoOpeningCard() {
         </a>
         .
       </p>
-    </div>
-  )
-}
-export default function JoinUsPage() {
-  const active = openings.filter(o => o.active)
-
-  return (
-    <div className="space-y-12">
-      <section className="space-y-4">
-        <SectionTitle title="Why Join Us?" subtitle="" />
-        <div className="text-neutralMid text-sm leading-relaxed space-y-3">
-          <p>
-            Welcome to the <strong>Cognition X Lab</strong> at the National University of Singapore (NUS)!
-            Our cross-disciplinary research lab focuses on data- and digitalisation-driven project cognition
-            and system resilience for infrastructure and buildings in the built environment.
-          </p>
-          <p>
-            By joining our lab, you will gain hands-on experience in data science, AI, digital technologies,
-            systems engineering, and sustainability for the built environment. You will learn coding, data
-            analysis, scientific writing, and presenting your work, while collaborating with a supportive team.
-          </p>
-          <p>
-            Our mission is to design, build, and evaluate data-centric cognitive systems (“project brain”) that
-            perceive, learn, and actuate in complex environments to improve efficiency, safety, sustainability, and resilience.
-            We value innovation, collaboration, excellence, and critical thinking.
-          </p>
-          <p>
-            NUS provides a vibrant, interdisciplinary, and innovation-driven environment. Singapore is cosmopolitan,
-            English-speaking, safe, and highly efficient — a perfect place to live and work.
-          </p>
-        </div>
-      </section>
-
-      <section className="space-y-4">
-  <SectionTitle title="General Application Guidelines" subtitle="" />
-  <div className="text-sm text-neutralMid leading-relaxed space-y-3">
-    <p>
-      <strong>Application timeline and requirements:</strong> NUS welcomes outstanding students with excellent
-      academic achievements from all over the world. Make sure you meet requirements as listed at{' '}
-      <a
-        href="https://cde.nus.edu.sg/graduate/graduate-programmes-by-research/how-to-apply/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-primary underline"
-      >
-        Graduate Programmes by Research - How to Apply - College of Design and Engineering
-      </a>.
-    </p>
-
-    <p>
-      <strong>Scholarships:</strong> We offer various scholarships (as listed below), but they can be very
-      competitive. Study the requirements and restrictions carefully. You are more competitive if you graduated
-      from a top university with good academic records (First-class honours, high GPA, excellent English test
-      results, publications). Less well-represented nationalities could apply for non-restricted scholarships such
-      as the NUS ASEAN Research Scholarship, Commonwealth Scholarship, NUS SINGA Scholarship, etc.
-    </p>
-
-    <p>
-      <strong>More information:</strong> Visit the{' '}
-      <a
-        href="https://nusgs.nus.edu.sg"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-primary underline"
-      >
-        NUS Graduate School (NUSGS)
-      </a>{' '}
-      and{' '}
-      <a
-        href="https://cde.nus.edu.sg/graduate/scholarship-opportunities/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-primary underline"
-      >
-        Scholarship Opportunities - College of Design and Engineering
-      </a>.
-    </p>
-
-    <ul className="list-disc ml-6 space-y-1">
-      <li>
-        <a
-          href="https://nusgs.nus.edu.sg/scholarships/presidents-graduate-fellowship/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary underline"
-        >
-          President’s Graduate Fellowship
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://nusgs.nus.edu.sg/scholarships/nus-research-scholarship/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary underline"
-        >
-          NUS Research Scholarship 
-        </a>
-      </li> 
-      <li>
-        <a
-          href="https://nusgs.nus.edu.sg/scholarships/nus-asean-research-scholarship"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary underline"
-        >
-          NUS ASEAN Research Scholarship
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://nusgs.nus.edu.sg/scholarships/commonwealth-scholarship/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary underline"
-        >
-          Commonwealth Scholarship
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://nusgs.nus.edu.sg/scholarships/ai-singapore-scholarship"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary underline"
-        >
-          AI Singapore Scholarship
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://nusgs.nus.edu.sg/scholarships/data-science-scholarship"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary underline"
-        >
-          NUS Data Science Scholarship
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://nusgs.nus.edu.sg/scholarships/nus-industry-relevant-phd-scholarship-nus-irp"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary underline"
-        >
-          NUS Industry-Relevant PhD Scholarship (NUS-IRP)
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://nusgs.nus.edu.sg/scholarships/nus-singa-scholarship"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary underline"
-        >
-          NUS SINGA Scholarship
-        </a>
-      </li>
-    </ul>
-
-    <p>
-      <strong>Do your homework:</strong> Read the lab manual first on the Lab “Resources” page (
-        <a
-        href="/resources"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-primary underline"
-      >
-        Link
-      </a>). Understand the lab, review our research scope, and ensure your interests align with our focus.
-      Tailor your application carefully.
-    </p>
-
-    <p>
-      <strong>Before you apply:</strong> Reach out to <strong>Dr. Jinying Xu</strong> before submitting your
-      application. Explain how your expertise and skills contribute to lab research, which funding you would pursue
-      (if applying for a scholarship, specify which one you are eligible for and interested in). Include your CV,
-      transcripts, an initial research proposal (as outlined in the lab manual), and optionally your publication
-      links or GitHub pages.
-    </p>
-
-    <p>
-      <strong>Other helpful information:</strong>  <a
-        href="https://nusgs.nus.edu.sg/cost-of-living/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-primary underline"
-      >Cost of Living : NUS Graduate School (NUSGS)
-      </a>
-    </p>
-  </div>
-</section>
-
-
-      <section className="space-y-6">
-        <SectionTitle title="Current Openings" subtitle="" />
-        {active.length > 0 ? (
-          active.map((o) => (
-            <OpeningCard
-              key={o.id}
-              openingId={o.id}
-              title={o.title}
-              summary={o.description}
-              posted={o.posted}
-              deadline={o.deadline}
-            />
-          ))
-        ) : (
-          <NoOpeningCard />
-        )}
-      </section>
     </div>
   )
 }
