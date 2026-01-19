@@ -1,8 +1,12 @@
 // app/join-us/page.tsx
-import { openings } from '@/lib/data'
+'use client' // Added because we use useState
+
+import { useState } from 'react' // Added missing import
+import { openings, requirements, howToApply } from '@/lib/data' // Added missing data imports
 import { SectionTitle } from '@/components/SectionTitle'
-import OpeningCard from '@/components/OpeningCard'
-import NoOpeningCard from '@/components/NoOpeningCard'
+
+// REMOVED: import OpeningCard from '@/components/OpeningCard' (Conflict)
+// REMOVED: import NoOpeningCard from '@/components/NoOpeningCard' (Conflict)
 
 export default function JoinUsPage() {
   const active = openings.filter((o) => o.active)
@@ -183,6 +187,8 @@ export default function JoinUsPage() {
   )
 }
 
+// --- Local Component Definitions ---
+
 function OpeningCard({
   openingId,
   title,
@@ -244,7 +250,6 @@ function OpeningCard({
 
       {open && (
         <div id={`opening-${openingId}`} className="border-t px-5 py-4 grid gap-6 md:grid-cols-2">
-          {/* Fixed typo: rounded-xl2 -> rounded-xl */}
           <section className="rounded-xl border bg-panel p-4">
             <div className="text-sm font-semibold mb-2">Specific Requirements</div>
             <ul className="list-disc ml-5 space-y-2 text-sm text-neutralMid">
@@ -254,7 +259,6 @@ function OpeningCard({
             </ul>
           </section>
 
-          {/* Fixed typo: rounded-xl2 -> rounded-xl */}
           <section className="rounded-xl border bg-panel p-4">
             <div className="text-sm font-semibold mb-2">How to Apply</div>
             <ul className="list-decimal ml-5 space-y-2 text-sm">
