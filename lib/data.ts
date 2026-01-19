@@ -895,6 +895,35 @@ export const openings: Opening[] = [
   // },
 ]
 
+export const openings = [
+  // ...existing openings...
+
+  // Past opening example 1
+  {
+    id: 'rf-intelligent-carbon-management-2025',
+    title: 'Research Fellow (Intelligent Carbon Management)',
+    description:
+      'Research Fellow position (Intelligent Carbon Management). This posting is a past opening; the original job posting is linked.',
+    posted: '2025-11-15',
+    deadline: '2025-12-31',
+    active: false,
+    externalUrl:
+      'https://careers.nus.edu.sg/job/Research-Fellow-%28Intelligent-Carbon-Management%29/31002-en_GB/',
+  },
+
+  // Past opening example 2
+  {
+    id: 'ra-construction-automation-2025',
+    title: 'Research Assistant (Construction automation)',
+    description:
+      'Research Assistant (Construction automation). This posting is a past opening; the original job posting is linked.',
+    posted: '2025-10-15',
+    deadline: '2025-11-30',
+    active: false,
+    externalUrl:
+      'https://careers.nus.edu.sg/job/Research-Assistant-%28Construction-automation%29/30800-en_GB/',
+  },
+]
 
 export const requirements = {
   postdoc: [
