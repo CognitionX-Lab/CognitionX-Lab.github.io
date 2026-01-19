@@ -874,7 +874,8 @@ export type Opening = {
   notes?: string[]
 }
 
-export const openings: Opening[] = [
+export const openings = [
+  // ...existing openings...
   {
     id: 'open-phd',
     title: 'PhD Positions (Fall 2026)',
@@ -893,11 +894,7 @@ export const openings: Opening[] = [
   //   posted: 'September 2025',
   //   deadline: 'November 30, 2025',
   // },
-]
-
-export const openings = [
-  // ...existing openings...
-
+  
   // Past opening example 1
   {
     id: 'rf-intelligent-carbon-management-2025',
