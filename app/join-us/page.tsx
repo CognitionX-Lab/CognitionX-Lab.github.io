@@ -1,6 +1,8 @@
-import { useState } from 'react'
-import { openings, requirements, howToApply } from '@/lib/data'
+// app/join-us/page.tsx
+import { openings } from '@/lib/data'
 import { SectionTitle } from '@/components/SectionTitle'
+import OpeningCard from '@/components/OpeningCard'
+import NoOpeningCard from '@/components/NoOpeningCard'
 
 export default function JoinUsPage() {
   const active = openings.filter((o) => o.active)
