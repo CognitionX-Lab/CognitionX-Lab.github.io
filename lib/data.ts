@@ -78,7 +78,7 @@ export const people: Person[] = [
     name: 'Christoph P. Sydora',
     role: 'Research Fellow',
     group: 'Postdoc',
-    avatar: '/people/chris.png',
+    avatar: '/people/Chris.png',
     bio: 'Christoph is a Research Fellow researching includes automated building model evaluation/checking and rule encoding, automated design, occupancy simulation, augmented and virtual reality (AR/VR) model viewing, cloud-based model repositories and services, smart building controls, and automated construction planning.',
     interests: ['Building Information Modeling', 'Computer Science', 'Rule Compliance Checking'],
     education: [
