@@ -1028,14 +1028,15 @@ export const howToApply = {
 /* ===== News (for Home) ===== */
 export type NewsItem = { id: string, date: string, title: string, href?: string }
 export const news: NewsItem[] = [
-  { id: 'n1', date: 'Sep 2025', title: '🎉 Dr. Jinying Xu joined NUS Department of the Built Enviornment as Assistant Professor' },
+  { id: 'n1', date: 'Sep 2025', title: '🎉 Dr. Jinying Xu joined NUS Department of the Built Enviornment as an Assistant Professor' },
   { id: 'n2', date: 'Oct 2025', title: '🚀 Cognition X Lab Group\'s website is live.' },
   { id: 'n3', date: '21 Nov 2025', title: '📢 Dr. Jinying Xu delivered a seminar at NUS on “Managing Complexities in Modular Construction and Mega Infrastructure Projects through Digital Technologies: Global Case Insights" (1:00-5:00pm, SDE 4 Level 4 Executive Room ), over 25 Singapore industry professionals actively participated' },
   { id: 'n4', date: '15-16 Dec 2025', title: '📢 Dr. Jinying Xu was invited to the "NCTI-DCHK Conference 2025: Digital Transformation in Construction" and gave an invited talk "Digital-enabled Intelligent Carbon Management System: Key Elements and System Architecture" at the University of Hong Kong in HKSAR' },
   { id: 'n5', date: '17 Dec 2025', title: '📢 Dr. Jinying Xu visted the Department of Architecture and Civil Engineering, City University of Hong Kong.' },
   { id: 'n6', date: '18 Dec 2025', title: '📢 Dr. Jinying Xu gave an invited talk "Digital technologies for intelligent carbon management" at the Department of Building and Real Estate, The Hong Kong Polytechnic University.' },
   { id: 'n7', date: '19 Dec 2025', title: '📢 Dr. Jinying Xu gave an invited seminar "Advancing carbon management with ontology-driven data collection" at the Frontier Forum on Smart Construction and Smart City Research at Huazhong University of Science and Technology.' },
-]
+  { id: 'n8', date: '12 Jan 2026', title: '🎉 Welcome Mr. Ruiyan Zheng who joins Cognition X Lab, NUS Department of the Built Enviornment as a Research Engineer/PhD Student.' },
+  { id: 'n9', date: '6 Apr 2026', title: '🎉 Dr. Christoph P. Sydora who joins Cognition X Lab,  NUS Department of the Built Enviornment as a Research Fellow.'},
 
 export const map = {
   lat: 1.2966,
