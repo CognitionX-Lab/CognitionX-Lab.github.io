@@ -73,6 +73,41 @@ export const people: Person[] = [
     joinDate: 'Fall 2025',
   },
   {
+    id: 'postdoc-1',
+    slug: 'christoph-Sydora',
+    name: 'Christoph P. Sydora',
+    role: 'Research Fellow',
+    group: 'Postdoc',
+    avatar: '/people/chris.png',
+    bio: 'Christoph is a Research Fellow researching includes automated building model evaluation/checking and rule encoding, automated design, occupancy simulation, augmented and virtual reality (AR/VR) model viewing, cloud-based model repositories and services, smart building controls, and automated construction planning.',
+    interests: ['Building Information Modeling', 'Computer Science', 'Rule Compliance Checking'],
+    education: [
+      {
+        degree: 'Doctor of Philosophy (PhD) in Computing Science',
+        institution: 'University of Alberta',
+        year: '2024'
+      },
+      {
+        degree: 'Master of Science (MSc) in Computing Science',
+        institution: 'University of Alberta',
+        year: '2019'
+      },
+      {
+        degree: 'Bachelor of Science (BSc) with Specialization in Computing Science',
+        institution: 'University of Alberta',
+        year: '2016'
+      }
+    ],
+    links: {
+      scholar: 'https://scholar.google.com/citations?user=S4BK0DIAAAAJ&hl=en&oi=ao',
+      github: 'https://github.com/csydora',
+      linkedin: 'https://www.linkedin.com/in/christoph-sydora-a7194b171/',
+      website: 'https://csydora.ca/',
+      email: 'csydora@nus.edu.sg',
+    },
+    intake: 'Spring 2026',
+  },
+  {
     id: 'phd-1',
     slug: 'ruiyan-zheng',
     name: 'Ruiyan Zheng',
@@ -96,12 +131,34 @@ export const people: Person[] = [
     links: {
       github: 'https://github.com/ruiyan-zheng',
       linkedin: 'https://www.linkedin.com/in/ruiyan-zheng',
-      email: 'ruiyan-zheng@u.nus.edu',
+      email: 'zhengruiyan@u.nus.edu',
     },
     intake: 'Spring 2026',
   },
   {
     id: 'ms-1',
+    slug: 'xinyan-zhang',
+    name: 'Xinyan Zhang',
+    role: 'MSc Student',
+    group: 'Masters',
+    avatar: '/people/Xinyan.png',
+    bio: 'Ruixuan is pursuing her MSc degree in Building Performance and Sustainability at National University of Singapore. She works on Climate-Comfort-Carbon optimised design of buildings.',
+    interests: ['Sustainability', 'Architecture design'],
+    education: [
+      {
+        degree: 'Bachelor of Architecture',
+        institution: 'Xiamen University',
+        year: '2025'
+      }
+    ],
+    links: {
+      linkedin: 'https://www.linkedin.com/in/%E6%98%95%E5%B2%A9-%E5%BC%A0-05726b37a/',
+      email: 'e1583222@u.nus.edu',
+    },
+    intake: 'Fall 2025',
+  },
+  {
+    id: 'ms-2',
     slug: 'ruixuan-qi',
     name: 'Ruixuan Qi',
     role: 'Part-Time Research Assistant (MSc Student)',
