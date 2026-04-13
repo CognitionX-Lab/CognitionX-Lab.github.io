@@ -142,7 +142,7 @@ export const people: Person[] = [
     role: 'MSc Student',
     group: 'Masters',
     avatar: '/people/Xinyan.png',
-    bio: 'Ruixuan is pursuing her MSc degree in Building Performance and Sustainability at National University of Singapore. She works on Climate-Comfort-Carbon optimised design of buildings.',
+    bio: 'Xinyan is pursuing her MSc degree in Building Performance and Sustainability at National University of Singapore. She works on Climate-Comfort-Carbon optimised design of buildings.',
     interests: ['Sustainability', 'Architecture design'],
     education: [
       {
