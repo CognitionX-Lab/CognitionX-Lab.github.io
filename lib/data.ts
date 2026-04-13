@@ -1037,7 +1037,7 @@ export const news: NewsItem[] = [
   { id: 'n7', date: '19 Dec 2025', title: '📢 Dr. Jinying Xu gave an invited seminar "Advancing carbon management with ontology-driven data collection" at the Frontier Forum on Smart Construction and Smart City Research at Huazhong University of Science and Technology.' },
   { id: 'n8', date: '12 Jan 2026', title: '🎉 Welcome Mr. Ruiyan Zheng who joins Cognition X Lab, NUS Department of the Built Enviornment as a Research Engineer/PhD Student.' },
   { id: 'n9', date: '6 Apr 2026', title: '🎉 Dr. Christoph P. Sydora who joins Cognition X Lab,  NUS Department of the Built Enviornment as a Research Fellow.'},
-
+]
 export const map = {
   lat: 1.2966,
   lng: 103.7764,
